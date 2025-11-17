@@ -1,6 +1,7 @@
-<?php 
+<?php
 $page_title = 'Home';
-include 'includes/header.php'; 
+$has_hero = true; // Kennzeichnet Seiten mit Hero-Bild
+include 'includes/header.php';
 ?>
 
 <!-- Hero Section -->
@@ -8,8 +9,8 @@ include 'includes/header.php';
     <div class="hero-bg"></div>
     <div class="hero-content">
         <h1>BIKEPOINT</h1>
-        <p>RIDE. EXPLORE. ENJOY.</p>
-        <a href="rental.php" class="btn btn-primary">EXPLORE BIKES</a>
+        <p>FAHREN. ENTDECKEN. GENIESSEN.</p>
+        <a href="rental.php" class="btn btn-primary">BIKES ENTDECKEN</a>
     </div>
     <div class="hero-scroll">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -21,8 +22,8 @@ include 'includes/header.php';
 <!-- Services Section -->
 <section class="section-spacing">
     <div class="container">
-        <h2 class="section-title fade-in">Our Services</h2>
-        
+        <h2 class="section-title fade-in">Unsere Services</h2>
+
         <div class="services-grid">
             <div class="service-card fade-in">
                 <div class="service-icon">
@@ -33,10 +34,10 @@ include 'includes/header.php';
                         <path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path>
                     </svg>
                 </div>
-                <h3>Bike Rental</h3>
-                <p>Premium bikes for every adventure. Choose from our wide selection of mountain bikes, e-bikes, and city bikes.</p>
+                <h3>Bike Verleih</h3>
+                <p>Premium-Bikes für jedes Abenteuer. Wähle aus unserer großen Auswahl an Mountainbikes, E-Bikes und Citybikes.</p>
             </div>
-            
+
             <div class="service-card fade-in">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -46,9 +47,9 @@ include 'includes/header.php';
                     </svg>
                 </div>
                 <h3>Shop</h3>
-                <p>Quality gear and accessories. Everything you need for the perfect ride, from helmets to maintenance tools.</p>
+                <p>Hochwertige Ausrüstung und Zubehör. Alles was du für die perfekte Fahrt brauchst, von Helmen bis Wartungstools.</p>
             </div>
-            
+
             <div class="service-card fade-in">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -56,7 +57,7 @@ include 'includes/header.php';
                     </svg>
                 </div>
                 <h3>Service</h3>
-                <p>Expert maintenance and repairs. Our skilled technicians keep your bike in perfect condition.</p>
+                <p>Professionelle Wartung und Reparaturen. Unsere erfahrenen Techniker halten dein Bike in Top-Zustand.</p>
             </div>
         </div>
     </div>
@@ -66,27 +67,27 @@ include 'includes/header.php';
 <section class="section-spacing" style="background-color: var(--color-primary);">
     <div class="container">
         <div class="fade-in" style="max-width: 900px; margin: 0 auto; text-align: center;">
-            <h2 class="section-title">Why Choose Bikepoint?</h2>
+            <h2 class="section-title">Warum Bikepoint?</h2>
             <p style="font-size: 1.125rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 3rem;">
-                Since 2015, we've been passionate about cycling. Our mission is to provide premium bikes 
-                and exceptional service, making every ride memorable. Whether you're exploring mountain 
-                trails or cruising through the city, we have the perfect bike for you.
+                Seit 2015 brennen wir für das Radfahren. Unsere Mission ist es, Premium-Bikes
+                und außergewöhnlichen Service zu bieten, damit jede Fahrt unvergesslich wird. Ob du
+                Bergpfade erkundest oder durch die Stadt cruist, wir haben das perfekte Bike für dich.
             </p>
-            
+
             <div class="stats-grid">
                 <div class="stat">
                     <div class="stat-number">2000+</div>
-                    <div class="stat-label">Happy Riders</div>
+                    <div class="stat-label">Glückliche Fahrer</div>
                 </div>
-                
+
                 <div class="stat">
                     <div class="stat-number">50+</div>
                     <div class="stat-label">Premium Bikes</div>
                 </div>
-                
+
                 <div class="stat">
                     <div class="stat-number">9</div>
-                    <div class="stat-label">Years Experience</div>
+                    <div class="stat-label">Jahre Erfahrung</div>
                 </div>
             </div>
         </div>
@@ -98,12 +99,12 @@ include 'includes/header.php';
     <div class="container">
         <div class="fade-in" style="max-width: 800px; margin: 0 auto; text-align: center;">
             <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; margin-bottom: 1.5rem; letter-spacing: 0.1em;">
-                Ready for your next adventure?
+                Bereit für dein nächstes Abenteuer?
             </h2>
             <p style="font-size: 1.125rem; color: var(--color-text-light); margin-bottom: 3rem; line-height: 1.8;">
-                Discover our collection of premium bikes and start exploring today.
+                Entdecke unsere Kollektion an Premium-Bikes und starte noch heute deine Erkundungstour.
             </p>
-            <a href="rental.php" class="btn btn-primary">VIEW BIKES</a>
+            <a href="rental.php" class="btn btn-primary">BIKES ANSEHEN</a>
         </div>
     </div>
 </section>
