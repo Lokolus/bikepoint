@@ -35,7 +35,7 @@ include 'includes/header.php';
             <div class="bike-categories-grid">
                 <!-- Mountainbikes -->
                 <div class="category-card">
-                    <div class="category-icon">🏔️</div>
+                    <div class="category-image-placeholder">Mountainbike</div>
                     <div class="category-content">
                         <h3>Mountainbikes</h3>
                         <p>Für Trail, Enduro und Cross Country</p>
@@ -51,7 +51,7 @@ include 'includes/header.php';
 
                 <!-- E-Mountainbikes -->
                 <div class="category-card">
-                    <div class="category-icon">⚡</div>
+                    <div class="category-image-placeholder">E-Mountainbike</div>
                     <div class="category-content">
                         <h3>E-Mountainbikes</h3>
                         <p>Mehr Power für längere Touren</p>
@@ -67,7 +67,7 @@ include 'includes/header.php';
 
                 <!-- Rennräder -->
                 <div class="category-card">
-                    <div class="category-icon">🚴</div>
+                    <div class="category-image-placeholder">Rennrad</div>
                     <div class="category-content">
                         <h3>Rennräder</h3>
                         <p>Für Straße und Wettkampf</p>
@@ -83,7 +83,7 @@ include 'includes/header.php';
 
                 <!-- Gravelbikes -->
                 <div class="category-card">
-                    <div class="category-icon">🌄</div>
+                    <div class="category-image-placeholder">Gravelbike</div>
                     <div class="category-content">
                         <h3>Gravelbikes</h3>
                         <p>Vielseitig für Straße und Schotter</p>
@@ -99,7 +99,7 @@ include 'includes/header.php';
 
                 <!-- E-Bikes City/Trekking -->
                 <div class="category-card">
-                    <div class="category-icon">🚲</div>
+                    <div class="category-image-placeholder">City E-Bike</div>
                     <div class="category-content">
                         <h3>City & Trekking E-Bikes</h3>
                         <p>Komfortabel für Alltag und Touren</p>
@@ -115,7 +115,7 @@ include 'includes/header.php';
 
                 <!-- Kinderbikes -->
                 <div class="category-card">
-                    <div class="category-icon">👶</div>
+                    <div class="category-image-placeholder">Kinderbike</div>
                     <div class="category-content">
                         <h3>Kinder & Jugend</h3>
                         <p>Hochwertige Bikes für die Kleinen</p>
@@ -138,27 +138,27 @@ include 'includes/header.php';
             <h2 style="text-align: center; margin-bottom: 3rem;">Unsere Services beim Bike-Kauf</h2>
             <div class="benefits-showcase">
                 <div class="benefit-box">
-                    <h3>🎯 Persönliche Beratung</h3>
+                    <h3>Persönliche Beratung</h3>
                     <p>Unsere Bike-Experten nehmen sich Zeit für dich und finden gemeinsam mit dir das perfekte Bike für deine Bedürfnisse.</p>
                 </div>
                 <div class="benefit-box">
-                    <h3>🚴 Testfahrten</h3>
+                    <h3>Testfahrten</h3>
                     <p>Teste dein Wunsch-Bike ausgiebig auf echten Trails und Straßen. Nur so findest du heraus, ob es zu dir passt.</p>
                 </div>
                 <div class="benefit-box">
-                    <h3>🔧 Basis-Setup</h3>
+                    <h3>Basis-Setup</h3>
                     <p>Jedes Bike wird vor der Übergabe professionell aufgebaut, eingestellt und auf Sicherheit geprüft.</p>
                 </div>
                 <div class="benefit-box">
-                    <h3>📏 Größenberatung</h3>
+                    <h3>Größenberatung</h3>
                     <p>Wir ermitteln die optimale Rahmengröße für deine Körpermaße und deinen Fahrstil.</p>
                 </div>
                 <div class="benefit-box">
-                    <h3>💰 Faire Konditionen</h3>
+                    <h3>Faire Konditionen</h3>
                     <p>Transparente Preisgestaltung und beste Konditionen. Frag uns nach aktuellen Angeboten!</p>
                 </div>
                 <div class="benefit-box">
-                    <h3>📞 After-Sales Support</h3>
+                    <h3>After-Sales Support</h3>
                     <p>Auch nach dem Kauf sind wir für dich da – mit Service, Wartung und kompetenter Beratung.</p>
                 </div>
             </div>
@@ -174,15 +174,18 @@ include 'includes/header.php';
 
                 <div class="financing-grid">
                     <div class="financing-card">
-                        <h3>💳 Ratenkauf</h3>
+                        <div class="financing-icon-placeholder"></div>
+                        <h3>Ratenkauf</h3>
                         <p>Finanzierung über 6, 12 oder 24 Monate möglich. Bereits ab 0% effektiver Jahreszins bei ausgewählten Modellen.</p>
                     </div>
                     <div class="financing-card">
-                        <h3>🏢 Bike-Leasing</h3>
+                        <div class="financing-icon-placeholder"></div>
+                        <h3>Bike-Leasing</h3>
                         <p>JobRad & BusinessBike Partner. Spare bis zu 40% durch Gehaltsumwandlung. Ideal für Arbeitnehmer und Selbstständige.</p>
                     </div>
                     <div class="financing-card">
-                        <h3>🔄 Inzahlungnahme</h3>
+                        <div class="financing-icon-placeholder"></div>
+                        <h3>Inzahlungnahme</h3>
                         <p>Wir nehmen dein altes Bike in Zahlung. Faire Bewertung und Anrechnung auf deinen Neukauf.</p>
                     </div>
                 </div>
@@ -196,42 +199,36 @@ include 'includes/header.php';
             <h2 style="text-align: center; margin-bottom: 3rem;">Warum bei Bikepoint kaufen?</h2>
             <div class="features-grid">
                 <div class="feature-item">
-                    <div class="checkmark">✅</div>
                     <div class="feature-text">
                         <h3>Expertise</h3>
                         <p>Über 9 Jahre Erfahrung im Bike-Business. Wir wissen, worauf es ankommt.</p>
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="checkmark">✅</div>
                     <div class="feature-text">
                         <h3>Premium-Marken</h3>
                         <p>Nur hochwertige Bikes von renommierten Herstellern mit bester Qualität.</p>
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="checkmark">✅</div>
                     <div class="feature-text">
                         <h3>Lokaler Service</h3>
                         <p>Werkstatt vor Ort für Wartung, Reparatur und Ersatzteile.</p>
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="checkmark">✅</div>
                     <div class="feature-text">
                         <h3>Garantie & Support</h3>
                         <p>Volle Herstellergarantie plus unser persönlicher Service.</p>
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="checkmark">✅</div>
                     <div class="feature-text">
                         <h3>Test-Möglichkeiten</h3>
                         <p>Umfangreiches Angebot an Testbikes direkt in den Bergen.</p>
                     </div>
                 </div>
                 <div class="feature-item">
-                    <div class="checkmark">✅</div>
                     <div class="feature-text">
                         <h3>Faire Beratung</h3>
                         <p>Keine aufdringlichen Verkäufer – nur ehrliche, kompetente Beratung.</p>
@@ -249,19 +246,19 @@ include 'includes/header.php';
                 <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">Hochwertige, gewartete Gebrauchtbikes zu fairen Konditionen</p>
                 <div class="benefits-showcase">
                     <div class="benefit-box">
-                        <h3>🔍 Sorgfältig geprüft</h3>
+                        <h3>Sorgfältig geprüft</h3>
                         <p>Jedes Gebrauchtbike wird von unseren Mechanikern gründlich inspiziert und überholt.</p>
                     </div>
                     <div class="benefit-box">
-                        <h3>🛠️ Technisch einwandfrei</h3>
+                        <h3>Technisch einwandfrei</h3>
                         <p>Alle wichtigen Verschleißteile werden erneuert oder sind in sehr gutem Zustand.</p>
                     </div>
                     <div class="benefit-box">
-                        <h3>💎 Top Preis-Leistung</h3>
+                        <h3>Top Preis-Leistung</h3>
                         <p>Premium-Bikes in bestem Zustand zu attraktiven Konditionen.</p>
                     </div>
                     <div class="benefit-box">
-                        <h3>📋 Mit Gewährleistung</h3>
+                        <h3>Mit Gewährleistung</h3>
                         <p>12 Monate Gewährleistung auf alle gebrauchten Bikes.</p>
                     </div>
                 </div>
@@ -277,34 +274,42 @@ include 'includes/header.php';
             <p style="text-align: center; margin-bottom: 3rem; color: var(--color-text-light);">Zusätzlich zu kompletten Bikes bieten wir auch hochwertige Komponenten und Zubehör:</p>
             <div class="components-grid">
                 <div class="component-card">
+                    <div class="component-icon-placeholder"></div>
                     <h3>Laufräder</h3>
                     <p>Premium-Laufradsätze von DT Swiss, Mavic, Newmen</p>
                 </div>
                 <div class="component-card">
+                    <div class="component-icon-placeholder"></div>
                     <h3>Federgabeln</h3>
                     <p>RockShox, Fox, Öhlins, Marzocchi</p>
                 </div>
                 <div class="component-card">
+                    <div class="component-icon-placeholder"></div>
                     <h3>Dämpfer</h3>
                     <p>Fox Float, RockShox Super Deluxe</p>
                 </div>
                 <div class="component-card">
+                    <div class="component-icon-placeholder"></div>
                     <h3>Bremsen</h3>
                     <p>Shimano, SRAM, Magura</p>
                 </div>
                 <div class="component-card">
+                    <div class="component-icon-placeholder"></div>
                     <h3>Schaltungen</h3>
                     <p>Shimano (XT, XTR), SRAM (GX, X01, XX1)</p>
                 </div>
                 <div class="component-card">
+                    <div class="component-icon-placeholder"></div>
                     <h3>Cockpit</h3>
                     <p>Lenker, Vorbauten, Griffe von Renthal, Race Face, Ergon</p>
                 </div>
                 <div class="component-card">
+                    <div class="component-icon-placeholder"></div>
                     <h3>Sättel</h3>
                     <p>SQlab, Ergon, Fizik, WTB</p>
                 </div>
                 <div class="component-card">
+                    <div class="component-icon-placeholder"></div>
                     <h3>Pedale</h3>
                     <p>Shimano, Crankbrothers, Race Face, HT</p>
                 </div>
@@ -317,7 +322,7 @@ include 'includes/header.php';
         <div class="container">
             <h2>Bereit für dein neues Bike?</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem;">Besuche uns im Shop oder vereinbare einen Beratungstermin!</p>
-            <a href="about.php" class="btn btn-primary pulse-button">Jetzt Kontakt aufnehmen</a>
+            <a href="about.php" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
         </div>
     </section>
 </main>

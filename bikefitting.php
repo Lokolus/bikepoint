@@ -10,7 +10,7 @@ include 'includes/header.php';
 <!-- Hero Section -->
 <section class="hero" style="background-image: url('assets/images/19.08.25-380.jpg');">
     <div class="hero-content">
-        <h1 class="hero-title floating">Professionelles Bikefitting</h1>
+        <h1 class="hero-title">Professionelles Bikefitting</h1>
         <p class="hero-subtitle">Maximiere Komfort, Leistung und Effizienz mit individueller Anpassung</p>
     </div>
 </section>
@@ -34,27 +34,33 @@ include 'includes/header.php';
             <h2 style="text-align: center; margin-bottom: 3rem;">Vorteile eines Bikefittings</h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <h3>🎯 Maximale Effizienz</h3>
+                    <div class="benefit-icon-placeholder"></div>
+                    <h3>Maximale Effizienz</h3>
                     <p>Optimiere deine Kraftübertragung und steigere deine Leistung durch die perfekte Sitzposition.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>💪 Komfort & Gesundheit</h3>
+                    <div class="benefit-icon-placeholder"></div>
+                    <h3>Komfort & Gesundheit</h3>
                     <p>Vermeide Schmerzen in Rücken, Nacken, Knien und Händen durch ergonomische Anpassungen.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>⚡ Mehr Ausdauer</h3>
+                    <div class="benefit-icon-placeholder"></div>
+                    <h3>Mehr Ausdauer</h3>
                     <p>Fahre länger und entspannter durch eine optimierte Körperhaltung und Druckverteilung.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>🔧 Verletzungsprävention</h3>
+                    <div class="benefit-icon-placeholder"></div>
+                    <h3>Verletzungsprävention</h3>
                     <p>Reduziere das Risiko von Überlastungen und chronischen Beschwerden nachhaltig.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>🚴 Bessere Bike-Kontrolle</h3>
+                    <div class="benefit-icon-placeholder"></div>
+                    <h3>Bessere Bike-Kontrolle</h3>
                     <p>Verbessere deine Fahrtechnik und Kontrolle durch optimale Gewichtsverteilung.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>🎨 Individuell angepasst</h3>
+                    <div class="benefit-icon-placeholder"></div>
+                    <h3>Individuell angepasst</h3>
                     <p>Jeder Körper ist einzigartig – deine Bike-Position sollte es auch sein.</p>
                 </div>
             </div>
@@ -115,6 +121,7 @@ include 'includes/header.php';
             <h2 style="text-align: center; margin-bottom: 3rem;">Unsere Bikefitting-Pakete</h2>
             <div class="packages-grid">
                 <div class="package-card">
+                    <div class="package-image-placeholder">Basis Paket</div>
                     <h3>Basis Bikefitting</h3>
                     <ul class="package-features">
                         <li>Ausführliches Gespräch</li>
@@ -128,6 +135,7 @@ include 'includes/header.php';
                 </div>
 
                 <div class="package-card">
+                    <div class="package-image-placeholder">Premium Paket</div>
                     <h3>Premium Bikefitting</h3>
                     <ul class="package-features">
                         <li>Alle Basis-Leistungen</li>
@@ -143,6 +151,7 @@ include 'includes/header.php';
                 </div>
 
                 <div class="package-card">
+                    <div class="package-image-placeholder">Performance Paket</div>
                     <h3>Performance Bikefitting</h3>
                     <ul class="package-features">
                         <li>Alle Premium-Leistungen</li>
@@ -166,27 +175,27 @@ include 'includes/header.php';
             <h2 style="text-align: center; margin-bottom: 3rem;">Für wen ist Bikefitting geeignet?</h2>
             <div class="target-group-grid">
                 <div class="target-card">
-                    <h3>🏆 Ambitionierte Sportler</h3>
+                    <h3>Ambitionierte Sportler</h3>
                     <p>Du möchtest deine Leistung maximieren und in Wettkämpfen erfolgreich sein.</p>
                 </div>
                 <div class="target-card">
-                    <h3>🚴 Vielfahrer</h3>
+                    <h3>Vielfahrer</h3>
                     <p>Du legst regelmäßig längere Strecken zurück und möchtest beschwerdefrei fahren.</p>
                 </div>
                 <div class="target-card">
-                    <h3>🤕 Bei Beschwerden</h3>
+                    <h3>Bei Beschwerden</h3>
                     <p>Du hast Schmerzen beim Fahren und suchst nach einer Lösung.</p>
                 </div>
                 <div class="target-card">
-                    <h3>🆕 Neues Bike</h3>
+                    <h3>Neues Bike</h3>
                     <p>Du hast ein neues Rad gekauft und möchtest es optimal einstellen.</p>
                 </div>
                 <div class="target-card">
-                    <h3>🎯 Einsteiger</h3>
+                    <h3>Einsteiger</h3>
                     <p>Du beginnst mit dem Radsport und möchtest von Anfang an alles richtig machen.</p>
                 </div>
                 <div class="target-card">
-                    <h3>⏱️ Triathleten</h3>
+                    <h3>Triathleten</h3>
                     <p>Du brauchst eine aerodynamische und effiziente Position für Zeitfahren.</p>
                 </div>
             </div>
@@ -251,7 +260,7 @@ include 'includes/header.php';
         <div class="container">
             <h2>Bereit für deine perfekte Position?</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem;">Vereinbare jetzt deinen Bikefitting-Termin und erlebe den Unterschied!</p>
-            <a href="about.php" class="btn btn-primary pulse-button">Jetzt Termin vereinbaren</a>
+            <a href="about.php" class="btn btn-primary">Jetzt Termin vereinbaren</a>
         </div>
     </section>
 </main>
