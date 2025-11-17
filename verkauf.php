@@ -35,7 +35,7 @@ include 'includes/header.php';
                     </p>
                 </div>
                 <div class="fade-in" style="position: relative;">
-                    <div style="aspect-ratio: 4/3; background-image: url('assets/images/auf.jpg'); background-size: cover; background-position: center; border-radius: 12px; filter: grayscale(100%); position: relative; overflow: hidden;">
+                    <div style="aspect-ratio: 4/3; background-image: url('assets/images/19.08.25-229.jpg'); background-size: cover; background-position: center; border-radius: 12px; filter: grayscale(100%); position: relative; overflow: hidden;">
                         <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)); border-radius: 12px;"></div>
                     </div>
                 </div>
