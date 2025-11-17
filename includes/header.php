@@ -23,7 +23,6 @@
             <nav>
                 <a href="index.php" class="logo">
                     <img src="assets/images/logo.jpg" alt="Bikepoint Logo" class="logo-img">
-                    <span class="logo-text">BIKEPOINT</span>
                 </a>
 
                 <ul class="nav-menu">
