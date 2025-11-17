@@ -209,3 +209,6 @@ include 'includes/header.php';
 </main>
 
 <?php include 'includes/footer.php'; ?>
+
+<!-- Page-specific JavaScript -->
+<script src="assets/js/about.js"></script>
