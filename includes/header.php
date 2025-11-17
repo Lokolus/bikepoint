@@ -21,14 +21,19 @@
     <div class="nav-wrapper<?php echo !isset($has_hero) || !$has_hero ? ' scrolled' : ''; ?>">
         <div class="container">
             <nav>
-                <a href="index.php" class="logo">BIKEPOINT</a>
-                
+                <a href="index.php" class="logo">
+                    <img src="assets/images/logo.jpg" alt="Bikepoint Logo" class="logo-img">
+                    <span class="logo-text">BIKEPOINT</span>
+                </a>
+
                 <ul class="nav-menu">
                     <li><a href="index.php"<?php echo ($page_title == 'Home') ? ' class="active"' : ''; ?>>Home</a></li>
+                    <li><a href="verkauf.php"<?php echo ($page_title == 'Bike Verkauf') ? ' class="active"' : ''; ?>>Verkauf</a></li>
                     <li><a href="rental.php"<?php echo ($page_title == 'Verleih & Service') ? ' class="active"' : ''; ?>>Verleih & Service</a></li>
+                    <li><a href="bikefitting.php"<?php echo ($page_title == 'Bikefitting') ? ' class="active"' : ''; ?>>Bikefitting</a></li>
                     <li><a href="about.php"<?php echo ($page_title == 'Über uns & Kontakt') ? ' class="active"' : ''; ?>>Über uns & Kontakt</a></li>
                 </ul>
-                
+
                 <div class="mobile-menu-toggle">
                     <span></span>
                     <span></span>
