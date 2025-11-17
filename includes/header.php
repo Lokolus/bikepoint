@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/logo">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.jpg">
 </head>
 <body>
 
