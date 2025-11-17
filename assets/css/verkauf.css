@@ -1,78 +1,82 @@
 /* ==========================================
-   VERKAUF PAGE - SPECIFIC STYLES
-   Orientiert an bestehender Komposition
+   VERKAUF PAGE - Ultra-Minimalistisch
+   Scandinavian Minimalism | Offene Sektionen
+   KEINE Boxen, nur luftige Grids
    ========================================== */
 
 /* Section Spacing */
 .section {
-    padding: 10rem 0;
+    padding: 12rem 0;  /* Massiv viel Weißraum */
 }
 
 .section h2 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 300;
-    letter-spacing: 0.15em;
-    margin-bottom: 8rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 100;  /* Ultra-thin */
+    letter-spacing: 0.2em;
+    margin-bottom: 10rem;  /* Noch mehr Raum */
+    text-align: center;
 }
 
-/* Bike Categories Grid */
+/* Bike Categories Grid - 2-3 Spalten, KEINE Boxen */
 .bike-categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 8rem 6rem;  /* Massiv viel Abstand vertikal und horizontal */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .category-card {
-    background: white;
-    border: 1px solid var(--color-border);
-    transition: var(--transition-smooth);
+    background: transparent;  /* KEINE Hintergrundfarbe */
+    border: none;  /* KEINE Borders */
+    transition: var(--transition-elegant);
+    text-align: center;
 }
 
 .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-10px);  /* Sanfte Lift-Bewegung */
 }
 
+/* Icons SEHR subtil, kaum sichtbar */
 .category-image-placeholder {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    margin-top: 3rem;
-    background-color: rgba(139, 157, 147, 0.08);
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 3rem;
+    background-color: transparent;  /* Kein Hintergrund */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.875rem;
-    font-weight: 300;
+    font-size: 0.75rem;
+    font-weight: 200;
     color: var(--color-accent);
-    letter-spacing: 0.1em;
-    box-shadow: 0 2px 10px rgba(139, 157, 147, 0.1);
+    letter-spacing: 0.15em;
     transition: var(--transition-elegant);
+    opacity: 0.2;  /* Kaum sichtbar */
 }
 
 .category-card:hover .category-image-placeholder {
-    transform: scale(1.05);
-    background-color: rgba(139, 157, 147, 0.15);
-    box-shadow: 0 4px 15px rgba(139, 157, 147, 0.15);
+    transform: scale(1.02);  /* Kaum Bewegung */
+    opacity: 0.5;  /* Etwas sichtbarer beim Hover */
 }
 
 .category-content {
-    padding: 2rem 2.5rem 3rem;
+    padding: 0;  /* Kein padding - offene Sektion */
     text-align: center;
 }
 
 .category-content h3 {
     font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em;
+    font-weight: 200;  /* Thin */
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.15em;
 }
 
 .category-content p {
     color: var(--color-text-light);
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
+    margin-bottom: 2rem;
+    line-height: 2;  /* Noch luftiger */
+    font-size: 0.9375rem;
 }
 
 .category-features {
@@ -114,176 +118,183 @@
     letter-spacing: 0.05em;
 }
 
-/* Service Benefits Grid */
+/* Service Benefits Grid - Offene Sektionen */
 .benefits-showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 8rem;  /* Massiv viel Abstand */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .benefit-box {
     text-align: center;
-    transition: var(--transition-smooth);
+    transition: var(--transition-elegant);
+    background: transparent;
+    border: none;
 }
 
 .benefit-box:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);  /* Sanfte Bewegung */
 }
 
 .benefit-box h3 {
     font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em;
+    font-weight: 200;  /* Thin */
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.15em;
 }
 
 .benefit-box p {
     color: var(--color-text-light);
-    line-height: 1.8;
+    line-height: 2;
+    font-size: 0.9375rem;
 }
 
-/* Financing Cards */
+/* Financing Cards - Offene Sektionen */
 .financing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 8rem 6rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .financing-card {
-    background: white;
-    padding: 3rem 2.5rem;
+    background: transparent;  /* KEINE Hintergrundfarbe */
+    padding: 0;  /* Kein padding */
     text-align: center;
-    border: 1px solid var(--color-border);
-    transition: var(--transition-smooth);
-}
-
-.financing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-
-.financing-icon-placeholder {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 2rem;
-    background-color: rgba(139, 157, 147, 0.08);
-    border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(139, 157, 147, 0.1);
+    border: none;  /* KEINE Borders */
     transition: var(--transition-elegant);
 }
 
+.financing-card:hover {
+    transform: translateY(-8px);
+}
+
+.financing-icon-placeholder {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 3rem;
+    background-color: transparent;  /* Kein Hintergrund */
+    border-radius: 50%;
+    transition: var(--transition-elegant);
+    opacity: 0.2;  /* Sehr subtil */
+}
+
 .financing-card:hover .financing-icon-placeholder {
-    transform: scale(1.05);
-    background-color: rgba(139, 157, 147, 0.15);
-    box-shadow: 0 4px 15px rgba(139, 157, 147, 0.15);
+    transform: scale(1.02);
+    opacity: 0.5;
 }
 
 .financing-card h3 {
     font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em;
+    font-weight: 200;  /* Thin */
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.15em;
 }
 
 .financing-card p {
     color: var(--color-text-light);
-    line-height: 1.8;
+    line-height: 2;
+    font-size: 0.9375rem;
 }
 
-/* Feature Checkmarks Grid */
+/* Feature Checkmarks Grid - Offene Sektionen */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 6rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .feature-item {
-    padding: 2.5rem 2rem;
-    background: white;
+    padding: 0;  /* Kein padding */
+    background: transparent;  /* Kein Hintergrund */
     text-align: center;
-    border: 1px solid var(--color-border);
-    transition: var(--transition-smooth);
+    border: none;  /* KEINE Borders */
+    transition: var(--transition-elegant);
 }
 
 .feature-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-8px);
 }
 
 .feature-text h3 {
     font-size: 1.25rem;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.1em;
+    font-weight: 200;  /* Thin */
+    margin-bottom: 1rem;
+    letter-spacing: 0.15em;
 }
 
 .feature-text p {
     color: var(--color-text-light);
     font-size: 0.875rem;
-    line-height: 1.8;
+    line-height: 2;
     margin: 0;
 }
 
-/* Used Bikes Section */
+/* Used Bikes Section - Subtile Sektion */
 .used-bikes-highlight {
-    background: rgba(139, 157, 147, 0.05);
-    padding: 4rem 3rem;
-    border: 1px solid var(--color-border);
-    transition: var(--transition-smooth);
+    background: transparent;  /* Kein Hintergrund */
+    padding: 6rem 3rem;  /* Mehr Raum */
+    border: none;  /* KEINE Borders */
+    transition: var(--transition-elegant);
+    text-align: center;
 }
 
 .used-bikes-highlight:hover {
-    background: rgba(139, 157, 147, 0.08);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
 }
 
-/* Components Section */
+/* Components Section - Offene Sektionen */
 .components-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 6rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .component-card {
-    background: white;
-    padding: 3rem 2rem;
+    background: transparent;  /* Kein Hintergrund */
+    padding: 0;  /* Kein padding */
     text-align: center;
-    border: 1px solid var(--color-border);
-    transition: var(--transition-smooth);
-}
-
-.component-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-
-.component-icon-placeholder {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 2rem;
-    background-color: rgba(139, 157, 147, 0.08);
-    border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(139, 157, 147, 0.1);
+    border: none;  /* KEINE Borders */
     transition: var(--transition-elegant);
 }
 
+.component-card:hover {
+    transform: translateY(-8px);
+}
+
+.component-icon-placeholder {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 3rem;
+    background-color: transparent;  /* Kein Hintergrund */
+    border-radius: 50%;
+    transition: var(--transition-elegant);
+    opacity: 0.2;  /* Sehr subtil */
+}
+
 .component-card:hover .component-icon-placeholder {
-    transform: scale(1.05);
-    background-color: rgba(139, 157, 147, 0.15);
-    box-shadow: 0 4px 15px rgba(139, 157, 147, 0.15);
+    transform: scale(1.02);
+    opacity: 0.5;
 }
 
 .component-card h3 {
     font-size: 1.25rem;
-    font-weight: 300;
-    margin-bottom: 0.8rem;
-    letter-spacing: 0.1em;
+    font-weight: 200;  /* Thin */
+    margin-bottom: 1rem;
+    letter-spacing: 0.15em;
 }
 
 .component-card p {
     font-size: 0.875rem;
     color: var(--color-text-light);
-    line-height: 1.8;
+    line-height: 2;
     margin: 0;
 }
 
