@@ -37,11 +37,19 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for fixed navigation */
 }
 
 /* Enhanced smooth scrolling for all browsers */
 * {
     scroll-behavior: smooth !important;
+}
+
+/* Smooth scrolling optimization */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 body {

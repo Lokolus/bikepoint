@@ -68,22 +68,62 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     // ==========================================
-    // SMOOTH SCROLL
+    // ENHANCED SMOOTH SCROLL
     // ==========================================
-    
+
+    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            
+
             if (target) {
                 const offsetTop = target.offsetTop - 80;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+
+                // Enhanced smooth scroll with easing
+                const startPosition = window.pageYOffset;
+                const distance = offsetTop - startPosition;
+                const duration = 1000; // 1 second
+                let start = null;
+
+                function easeInOutCubic(t) {
+                    return t < 0.5
+                        ? 4 * t * t * t
+                        : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+                }
+
+                function animation(currentTime) {
+                    if (start === null) start = currentTime;
+                    const timeElapsed = currentTime - start;
+                    const progress = Math.min(timeElapsed / duration, 1);
+                    const ease = easeInOutCubic(progress);
+
+                    window.scrollTo(0, startPosition + distance * ease);
+
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(animation);
+                    }
+                }
+
+                requestAnimationFrame(animation);
             }
         });
+    });
+
+    // Smooth scroll on page load
+    window.addEventListener('load', function() {
+        if (window.location.hash) {
+            setTimeout(function() {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        }
     });
     
     
