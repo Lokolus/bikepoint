@@ -868,6 +868,71 @@ footer {
 }
 
 /* ==========================================
+   PAGE HERO (for subpages)
+   ========================================== */
+
+.page-hero {
+    height: 60vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    animation: fadeInUp 1.5s ease;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    max-width: 900px;
+    padding: 0 2rem;
+}
+
+.page-hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.page-hero-content h1::after {
+    content: '';
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    opacity: 0.6;
+}
+
+.page-hero-content p {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    letter-spacing: 0.2em;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+/* ==========================================
    RESPONSIVE DESIGN
    ========================================== */
 
@@ -878,6 +943,20 @@ footer {
 
     .section-spacing {
         padding: 6rem 0;
+    }
+
+    .page-hero {
+        height: 50vh;
+        min-height: 400px;
+    }
+
+    .page-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .page-hero-content p {
+        font-size: 1rem;
+        letter-spacing: 0.15em;
     }
     
     .nav-menu {

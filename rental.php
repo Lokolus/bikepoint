@@ -1,19 +1,31 @@
 <?php
 $page_title = 'Verleih & Service';
+$has_hero = true;
 include 'includes/header.php';
 ?>
 
-<main style="padding-top: 80px; min-height: 100vh;">
+<!-- Page Hero -->
+<section class="page-hero" style="background-image: url('assets/images/19.08.25-360.jpg');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>Bike Verleih & Service</h1>
+        <p>Wähle aus unserer Premium-Auswahl an Bikes</p>
+    </div>
+    <div class="hero-scroll">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+    </div>
+</section>
 
-    <!-- Page Header -->
+<main style="min-height: 100vh;">
+
+    <!-- Page Content -->
     <section class="section-spacing">
         <div class="container">
             <div class="fade-in" style="text-align: center; max-width: 900px; margin: 0 auto 5rem;">
-                <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 300; margin-bottom: 1.5rem; letter-spacing: 0.15em;">
-                    Bike Verleih & Service
-                </h1>
                 <p style="font-size: 1.125rem; line-height: 1.8; color: var(--color-text-light);">
-                    Wähle aus unserer Premium-Auswahl an Bikes. Alle Verleihe inkludieren Helm, Schloss und Basisversicherung.
+                    Alle Verleihe inkludieren Helm, Schloss und Basisversicherung.
                 </p>
             </div>
 
@@ -22,7 +34,7 @@ include 'includes/header.php';
                 <h2>Mountainbikes</h2>
                 <div class="bikes-grid">
                     <div class="bike-card">
-                        <div class="bike-image" style="background-image: url('assets/images/19.08.25-360.jpg'); background-size: cover; background-position: center;">
+                        <div class="bike-image" style="background-image: url('assets/images/19.08.25-380.jpg'); background-size: cover; background-position: center;">
                         </div>
                         <div class="bike-info">
                             <h3>Trail Expert</h3>
@@ -38,7 +50,7 @@ include 'includes/header.php';
                     </div>
 
                     <div class="bike-card">
-                        <div class="bike-image" style="background-image: url('assets/images/19.08.25-380.jpg'); background-size: cover; background-position: center;">
+                        <div class="bike-image" style="background-image: url('assets/images/19.08.25-229.jpg'); background-size: cover; background-position: center;">
                         </div>
                         <div class="bike-info">
                             <h3>Enduro Pro</h3>
@@ -54,8 +66,7 @@ include 'includes/header.php';
                     </div>
 
                     <div class="bike-card">
-                        <div class="bike-image" style="background-image: url('assets/images/19.08.25-229.jpg'); background-size: cover; background-position: center;">
-                        </div>
+                        <div class="bike-image"></div>
                         <div class="bike-info">
                             <h3>XC Race</h3>
                             <div class="bike-price">€50/Tag</div>
@@ -76,8 +87,7 @@ include 'includes/header.php';
                 <h2>E-Bikes</h2>
                 <div class="bikes-grid">
                     <div class="bike-card">
-                        <div class="bike-image" style="background-image: url('assets/images/19.08.25-330.jpg'); background-size: cover; background-position: center;">
-                        </div>
+                        <div class="bike-image"></div>
                         <div class="bike-info">
                             <h3>City Comfort</h3>
                             <div class="bike-price">€40/Tag</div>

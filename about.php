@@ -1,17 +1,29 @@
 <?php
 $page_title = 'Über uns & Kontakt';
+$has_hero = true;
 include 'includes/header.php';
 ?>
 
-<main style="padding-top: 80px; min-height: 100vh;">
+<!-- Page Hero -->
+<section class="page-hero" style="background-image: url('assets/images/19.08.25-330.jpg');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>Über Bikepoint</h1>
+        <p>Seit 2015 deine Radsport-Experten in Maria Alm</p>
+    </div>
+    <div class="hero-scroll">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+    </div>
+</section>
+
+<main style="min-height: 100vh;">
 
     <!-- About Section -->
     <section class="section-spacing">
         <div class="container">
             <div class="fade-in" style="max-width: 1000px; margin: 0 auto;">
-                <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 300; margin-bottom: 3rem; letter-spacing: 0.15em; text-align: center;">
-                    Über Bikepoint
-                </h1>
 
                 <div style="font-size: 1.125rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 4rem;">
                     <p style="margin-bottom: 2rem;">
