@@ -6,32 +6,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // ==========================================
-    // MOBILE MENU FUNCTIONALITY
-    // ==========================================
-
-    const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    const navLinks = document.querySelectorAll('.nav-menu a');
-
-    if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener('click', function() {
-            mobileToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
-        });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    mobileToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                    document.body.style.overflow = '';
-                }
-            });
-        });
-    }
-
-    // ==========================================
     // ANIMATED TIMELINE WITH PROGRESS LINE
     // ==========================================
 
