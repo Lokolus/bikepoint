@@ -189,8 +189,15 @@ include 'includes/header.php';
     </section>
 
     <!-- CTA Section -->
-    <section style="padding: 4rem 0; text-align: center; background-color: #0A0A0A;">
-        <div class="container fade-in">
+    <section style="padding: 4rem 0; text-align: center; background-color: #0A0A0A; position: relative; overflow: hidden;">
+        <!-- Background Image -->
+        <div style="position: absolute; inset: 0; background-image: url('assets/images/19.08.25-380.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); opacity: 0.45;"></div>
+
+        <!-- Overlay -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.6));"></div>
+
+        <!-- Content -->
+        <div class="container fade-in" style="position: relative; z-index: 1;">
             <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 1.5rem; color: white;">
                 Besuche uns in Maria Alm
             </h2>

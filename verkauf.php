@@ -35,8 +35,8 @@ include 'includes/header.php';
                     </p>
                 </div>
                 <div class="fade-in" style="position: relative;">
-                    <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, rgba(139, 157, 147, 0.1) 0%, rgba(139, 157, 147, 0.05) 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px dashed rgba(139, 157, 147, 0.2);">
-                        <span style="font-size: 4rem; opacity: 0.3;"></span>
+                    <div style="aspect-ratio: 4/3; background-image: url('assets/images/auf.jpg'); background-size: cover; background-position: center; border-radius: 12px; filter: grayscale(100%); position: relative; overflow: hidden;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)); border-radius: 12px;"></div>
                     </div>
                 </div>
             </div>
@@ -643,8 +643,15 @@ include 'includes/header.php';
     </section>
 
     <!-- CTA Section -->
-    <section style="padding: 5rem 0; text-align: center; background: #0A0A0A;">
-        <div class="container fade-in">
+    <section style="padding: 5rem 0; text-align: center; background: #0A0A0A; position: relative; overflow: hidden;">
+        <!-- Background Image -->
+        <div style="position: absolute; inset: 0; background-image: url('assets/images/bergab.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); opacity: 0.45;"></div>
+
+        <!-- Overlay -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.6));"></div>
+
+        <!-- Content -->
+        <div class="container fade-in" style="position: relative; z-index: 1;">
             <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 1.5rem; color: white;">
                 Bereit für dein neues Bike?
             </h2>

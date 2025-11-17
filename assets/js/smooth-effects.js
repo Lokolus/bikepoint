@@ -357,8 +357,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
 
             document.body.style.opacity = '0';
-            document.body.style.transform = 'scale(0.98)';
-            document.body.style.transition = 'all 0.5s ease';
+            document.body.style.transition = 'opacity 0.5s ease';
 
             setTimeout(() => {
                 window.location.href = href;
@@ -368,12 +367,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fade in on page load
     document.body.style.opacity = '0';
-    document.body.style.transform = 'scale(0.98)';
 
     setTimeout(() => {
-        document.body.style.transition = 'all 0.8s ease';
+        document.body.style.transition = 'opacity 0.8s ease';
         document.body.style.opacity = '1';
-        document.body.style.transform = 'scale(1)';
     }, 100);
 
 });
