@@ -645,10 +645,10 @@ include 'includes/header.php';
     <!-- CTA Section -->
     <section style="padding: 5rem 0; text-align: center; background: #0A0A0A; position: relative; overflow: hidden;">
         <!-- Background Image -->
-        <div style="position: absolute; inset: 0; background-image: url('assets/images/bergab.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); opacity: 0.25;"></div>
+        <div style="position: absolute; inset: 0; background-image: url('assets/images/bergab.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); opacity: 0.45;"></div>
 
         <!-- Overlay -->
-        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.85));"></div>
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.6));"></div>
 
         <!-- Content -->
         <div class="container fade-in" style="position: relative; z-index: 1;">
