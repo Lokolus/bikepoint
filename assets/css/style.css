@@ -1,20 +1,28 @@
 /* ==========================================
-   BIKEPOINT - Minimalistisches Website Design
-   Farben: White Mode, S/W Bilder, Warmes Beige
+   BIKEPOINT - Ultra-Minimalistisches Website Design
+   Scandinavian Minimalism | Apple-like Design
+   Farben: Weiß, Schwarz, Anthrazit, Salbeigrün
    ========================================== */
 
 :root {
-    --color-primary: #F5F5F5;
-    --color-secondary: #FFFFFF;
-    --color-accent: #8B9D93;          /* Subtle sage green - very gentle */
-    --color-accent-hover: #A0B3A8;    /* Slightly lighter for hover */
-    --color-text: #1A1A1A;
-    --color-text-light: #6B6B6B;
-    --color-border: #E8E8E8;
+    --color-primary: #FAFAFA;          /* Ultra-light background */
+    --color-secondary: #FFFFFF;        /* Pure white */
+    --color-accent: #8B9D93;          /* Salbeigrün - subtle sage green */
+    --color-accent-hover: #A0B3A8;    /* Lighter sage for hover */
+    --color-text: #1A1A1A;            /* Deep black */
+    --color-text-anthracite: #3A3A3A; /* Anthrazit */
+    --color-text-light: #8A8A8A;      /* Light grey */
+    --color-border: #F0F0F0;          /* Very subtle border */
 
-    --transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: all 0.4s ease;
-    --transition-elegant: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-smooth: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.5s ease;
+    --transition-elegant: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --spacing-xs: 2rem;
+    --spacing-sm: 4rem;
+    --spacing-md: 8rem;
+    --spacing-lg: 12rem;
+    --spacing-xl: 16rem;
 }
 
 /* ==========================================
@@ -32,12 +40,13 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 200;  /* Ultra-thin für modernen Look */
     color: var(--color-text);
     background-color: var(--color-secondary);
-    line-height: 1.6;
+    line-height: 1.8;  /* Noch luftiger */
     overflow-x: hidden;
+    letter-spacing: 0.02em;
 }
 
 img {
@@ -63,9 +72,9 @@ button {
    ========================================== */
 
 .container {
-    max-width: 1400px;
+    max-width: 1600px;  /* Breitere Container für mehr Raum */
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 4rem;   /* Mehr seitlicher Abstand */
 }
 
 .fade-in {
@@ -88,7 +97,7 @@ button {
 }
 
 .section-spacing {
-    padding: 10rem 0;
+    padding: var(--spacing-lg) 0;  /* 12rem = massiv viel Weißraum */
 }
 
 .content-box {
@@ -259,10 +268,10 @@ nav {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background-color: #1A1A1A;
+    background-color: #0A0A0A;  /* Tiefes Schwarz */
 }
 
-/* Hero Background Image - Bild 3 */
+/* Hero Background Image - Schwarz-Weiß, leicht unscharf */
 .hero-bg {
     position: absolute;
     inset: 0;
@@ -270,22 +279,23 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: grayscale(100%) blur(1px);  /* S/W + leichte Unschärfe für Fokus auf Text */
 
-    /* Gentle shadow for text readability - No color filter */
+    /* Subtiles Overlay für Lesbarkeit */
     &::before {
         content: '';
         position: absolute;
         inset: 0;
         background: linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 0.25) 0%,
+            rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0.35) 100%
         );
         transition: var(--transition-elegant);
     }
 
-    /* Gentle zoom effect */
-    animation: heroZoom 30s ease-in-out infinite alternate;
+    /* Sehr sanfter Zoom-Effekt */
+    animation: heroZoom 40s ease-in-out infinite alternate;
 }
 
 @keyframes heroZoom {
@@ -293,7 +303,7 @@ nav {
         transform: scale(1);
     }
     100% {
-        transform: scale(1.05);
+        transform: scale(1.03);  /* Noch subtiler */
     }
 }
 
@@ -307,31 +317,33 @@ nav {
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 8vw, 6rem);
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    margin-bottom: 2rem;
+    font-size: clamp(4rem, 10vw, 8rem);  /* Größer, aber eleganter */
+    font-weight: 100;  /* Ultra-thin */
+    letter-spacing: 0.25em;  /* Sehr weit */
+    margin-bottom: 2.5rem;
     position: relative;
 }
 
-/* Subtle accent underline effect */
+/* Sehr subtile Akzentlinie */
 .hero h1::after {
     content: '';
     position: absolute;
-    bottom: -0.5rem;
+    bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
+    width: 80px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
-    opacity: 0.5;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0.6;
 }
 
 .hero p {
-    font-size: clamp(1.25rem, 2vw, 1.5rem);
-    letter-spacing: 0.3em;
-    margin-bottom: 3rem;
-    opacity: 0.95;
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);  /* Kleiner für Eleganz */
+    font-weight: 200;
+    letter-spacing: 0.35em;  /* Noch weiter */
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    opacity: 0.9;
 }
 
 .hero-scroll {
@@ -361,50 +373,57 @@ nav {
 
 .btn {
     display: inline-block;
-    padding: 1rem 3rem;
-    font-size: 0.875rem;
-    letter-spacing: 0.2em;
+    padding: 1.25rem 4rem;  /* Etwas größer für Premium-Feel */
+    font-size: 0.75rem;  /* Kleiner für Eleganz */
+    font-weight: 200;
+    letter-spacing: 0.3em;  /* Sehr weit */
     text-transform: uppercase;
-    transition: var(--transition-smooth);
+    transition: var(--transition-elegant);
     position: relative;
-    overflow: hidden;
+    border: none;
 }
 
+/* Outline-Button für Hero (minimalistisch) */
 .btn-primary {
-    background-color: var(--color-accent);
+    background-color: transparent;
     color: var(--color-secondary);
-    box-shadow: 0 2px 8px rgba(139, 157, 147, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-accent-hover);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(139, 157, 147, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.btn-primary::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
-    transform: translateX(-100%);
-    transition: var(--transition-elegant);
-}
-
-.btn-primary:hover::before {
-    transform: translateX(0);
-}
-
+/* Soft Solid Button für Content-Bereiche */
 .btn-secondary {
-    background-color: rgba(139, 157, 147, 0.08);
-    color: var(--color-accent);
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
     border: 1px solid var(--color-accent);
 }
 
 .btn-secondary:hover {
-    background-color: rgba(139, 157, 147, 0.15);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(139, 157, 147, 0.12);
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 157, 147, 0.15);
+}
+
+/* Outline Button für Content */
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 157, 147, 0.15);
 }
 
 /* ==========================================
@@ -420,11 +439,12 @@ section:nth-child(even) {
 }
 
 .section-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 300;
+    font-size: clamp(2rem, 4vw, 3.5rem);  /* Etwas kleiner für Eleganz */
+    font-weight: 100;  /* Ultra-thin */
     text-align: center;
-    margin-bottom: 8rem;
-    letter-spacing: 0.15em;
+    margin-bottom: var(--spacing-md);  /* 8rem massiv viel Raum */
+    letter-spacing: 0.2em;  /* Sehr weit */
+    color: var(--color-text);
 }
 
 /* ==========================================
@@ -433,55 +453,64 @@ section:nth-child(even) {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 8rem;  /* MASSIV viel Abstand zwischen Services */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .service-card {
     text-align: center;
-    transition: var(--transition-smooth);
+    transition: var(--transition-elegant);
+    padding: 0;  /* KEINE padding - offene Sektion */
+    border: none;  /* KEINE borders! */
+    background: transparent;  /* Transparent, kein Hintergrund */
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);  /* Sanfte Bewegung */
 }
 
+/* Icons SEHR subtil, kaum sichtbar */
 .service-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 2rem;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(139, 157, 147, 0.08);
+    background-color: transparent;  /* Kein Hintergrund */
     border-radius: 50%;
     transition: var(--transition-elegant);
-    box-shadow: 0 2px 10px rgba(139, 157, 147, 0.1);
+    opacity: 0.3;  /* Sehr subtil */
 }
 
 .service-card:hover .service-icon {
-    transform: scale(1.05);
-    background-color: rgba(139, 157, 147, 0.15);
-    box-shadow: 0 4px 15px rgba(139, 157, 147, 0.15);
+    opacity: 0.6;  /* Etwas sichtbarer beim Hover */
+    transform: scale(1.02);  /* Kaum Bewegung */
 }
 
 .service-icon svg {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     stroke: var(--color-accent);
-    stroke-width: 1.5;
+    stroke-width: 1;  /* Sehr dünn */
 }
 
 .service-card h3 {
     font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em;
+    font-weight: 200;  /* Thin */
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.15em;
+    color: var(--color-text);
 }
 
 .service-card p {
     color: var(--color-text-light);
-    line-height: 1.8;
+    line-height: 2;  /* Noch luftiger */
+    font-size: 0.9375rem;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .service-list {
@@ -532,33 +561,30 @@ section:nth-child(even) {
 }
 
 .bike-card {
-    background-color: var(--color-secondary);
-    border: 1px solid var(--color-border);
-    transition: var(--transition-smooth);
+    background-color: transparent;  /* Kein Hintergrund */
+    border: none;  /* KEINE Borders */
+    transition: var(--transition-elegant);
     overflow: hidden;
 }
 
 .bike-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-10px);  /* Sanfte Lift-Bewegung */
 }
 
 .bike-image {
-    height: 300px;
-    background: linear-gradient(135deg, #2C3E50 0%, #4A5568 100%);
+    height: 350px;
+    background: linear-gradient(135deg, #E5E5E5 0%, #D0D0D0 100%);  /* Hellgrau für S/W Platzhalter */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    filter: grayscale(100%);  /* Schwarz-Weiß */
 }
 
 .bike-image::after {
-    content: 'BIKE';
-    font-size: 4rem;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.1);
-    letter-spacing: 0.2em;
+    content: '';  /* Kein Text mehr */
+    display: none;
 }
 
 .bike-info {
@@ -567,9 +593,9 @@ section:nth-child(even) {
 
 .bike-info h3 {
     font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.1em;
+    font-weight: 200;  /* Thin */
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.12em;
 }
 
 .bike-price {
@@ -614,21 +640,22 @@ section:nth-child(even) {
 }
 
 .service-package {
-    padding: 3rem;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-secondary);
-    transition: var(--transition-smooth);
+    padding: 4rem 3rem;  /* Mehr padding für Großzügigkeit */
+    border: none;  /* KEINE Borders */
+    background-color: transparent;  /* Transparent */
+    transition: var(--transition-elegant);
+    text-align: center;
 }
 
 .service-package:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-8px);  /* Sanfte Lift-Bewegung */
 }
 
 .service-package h3 {
     font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.1em;
+    font-weight: 200;  /* Thin */
+    margin-bottom: 1rem;
+    letter-spacing: 0.15em;
 }
 
 .service-package .price {
@@ -826,10 +853,11 @@ section:nth-child(even) {
 }
 
 .stat-number {
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 4rem;  /* Größer für Impact */
+    font-weight: 100;  /* Ultra-thin */
     color: var(--color-accent);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
 }
 
 .stat-label {
@@ -927,7 +955,7 @@ footer {
    ========================================== */
 
 .page-hero {
-    height: 60vh;
+    height: 70vh;  /* Etwas höher für mehr Impact */
     min-height: 500px;
     display: flex;
     align-items: center;
@@ -937,6 +965,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: grayscale(100%) blur(1px);  /* Schwarz-Weiß + leichte Unschärfe */
 }
 
 .page-hero-overlay {
@@ -944,8 +973,8 @@ footer {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.5) 100%
+        rgba(0, 0, 0, 0.25) 0%,
+        rgba(0, 0, 0, 0.4) 100%
     );
 }
 
@@ -961,30 +990,31 @@ footer {
 }
 
 .page-hero-content h1 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 300;
-    letter-spacing: 0.15em;
-    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);  /* Größer */
+    font-weight: 100;  /* Ultra-thin */
+    letter-spacing: 0.2em;  /* Weiter */
+    margin-bottom: 2rem;
     position: relative;
 }
 
 .page-hero-content h1::after {
     content: '';
     position: absolute;
-    bottom: -0.75rem;
+    bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
+    width: 80px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
-    opacity: 0.6;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    opacity: 0.7;
 }
 
 .page-hero-content p {
-    font-size: clamp(1.125rem, 2vw, 1.375rem);
-    letter-spacing: 0.2em;
-    opacity: 0.95;
-    font-weight: 300;
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);  /* Kleiner für Eleganz */
+    font-weight: 200;
+    letter-spacing: 0.3em;  /* Sehr weit */
+    text-transform: uppercase;
+    opacity: 0.9;
 }
 
 /* ==========================================
