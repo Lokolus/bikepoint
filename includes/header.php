@@ -11,9 +11,13 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/logo.jpg">
+
+    <!-- Global JavaScript - Smooth Effects -->
+    <script src="assets/js/smooth-effects.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body<?php echo !isset($has_hero) || !$has_hero ? ' class="no-hero"' : ''; ?>>
 
