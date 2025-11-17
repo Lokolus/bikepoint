@@ -36,7 +36,7 @@ include 'includes/header.php';
                 </div>
                 <div class="fade-in" style="position: relative;">
                     <div style="aspect-ratio: 4/3; background: linear-gradient(135deg, rgba(139, 157, 147, 0.1) 0%, rgba(139, 157, 147, 0.05) 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px dashed rgba(139, 157, 147, 0.2);">
-                        <span style="font-size: 4rem; opacity: 0.3;">🚴</span>
+                        <span style="font-size: 4rem; opacity: 0.3;"></span>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@ include 'includes/header.php';
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem;">
                     <div class="verkauf-feature" style="display: flex; gap: 1.5rem; padding: 1rem; border-radius: 8px; transition: all 0.3s ease;">
                         <div style="flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%; background: rgba(139, 157, 147, 0.1); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 1.5rem;">💬</span>
+                            <span style="font-size: 1.5rem;"></span>
                         </div>
                         <div>
                             <h4 style="font-size: 1.125rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.75rem;">Persönliche Beratung</h4>
@@ -149,7 +149,7 @@ include 'includes/header.php';
 
                     <div class="verkauf-feature" style="display: flex; gap: 1.5rem; padding: 1rem; border-radius: 8px; transition: all 0.3s ease;">
                         <div style="flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%; background: rgba(139, 157, 147, 0.1); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 1.5rem;">🏔️</span>
+                            <span style="font-size: 1.5rem;"></span>
                         </div>
                         <div>
                             <h4 style="font-size: 1.125rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.75rem;">Testfahrten in den Alpen</h4>
@@ -161,7 +161,7 @@ include 'includes/header.php';
 
                     <div class="verkauf-feature" style="display: flex; gap: 1.5rem; padding: 1rem; border-radius: 8px; transition: all 0.3s ease;">
                         <div style="flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%; background: rgba(139, 157, 147, 0.1); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 1.5rem;">⚙️</span>
+                            <span style="font-size: 1.5rem;"></span>
                         </div>
                         <div>
                             <h4 style="font-size: 1.125rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.75rem;">Professionelles Setup</h4>
@@ -173,7 +173,7 @@ include 'includes/header.php';
 
                     <div class="verkauf-feature" style="display: flex; gap: 1.5rem; padding: 1rem; border-radius: 8px; transition: all 0.3s ease;">
                         <div style="flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%; background: rgba(139, 157, 147, 0.1); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 1.5rem;">🔧</span>
+                            <span style="font-size: 1.5rem;"></span>
                         </div>
                         <div>
                             <h4 style="font-size: 1.125rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.75rem;">After-Sales Support</h4>
