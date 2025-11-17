@@ -127,9 +127,11 @@ button {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    width: 100%;
+    z-index: 9999;
     transition: var(--transition-smooth);
     background-color: transparent;
+    pointer-events: auto;
 }
 
 /* Navigation starts transparent with white text */
@@ -283,6 +285,7 @@ nav {
     position: relative;
     overflow: hidden;
     background-color: #0A0A0A;  /* Tiefes Schwarz */
+    z-index: 1;
 }
 
 /* Hero Background Image - Schwarz-Weiß, leicht unscharf */
@@ -323,7 +326,7 @@ nav {
 
 .hero-content {
     position: relative;
-    z-index: 10;
+    z-index: 2;
     text-align: center;
     color: white;
     animation: fadeInUp 1.5s ease;
