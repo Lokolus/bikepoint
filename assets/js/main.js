@@ -14,19 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-menu a');
     
-    // Scroll Effect für Navigation
-    let lastScroll = 0;
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll > 50) {
-            navWrapper.classList.add('scrolled');
-        } else {
-            navWrapper.classList.remove('scrolled');
-        }
-        
-        lastScroll = currentScroll;
-    });
+    // Navigation is always sticky and visible - no scroll effect needed
     
     // Mobile Menu Toggle
     if (mobileToggle) {
@@ -345,68 +333,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ==========================================
-    // SMOOTH MOUSE CURSOR TRAIL (Subtle)
+    // CUSTOM CURSOR REMOVED
     // ==========================================
-
-    let cursorDot, cursorOutline;
-
-    function initCustomCursor() {
-        cursorDot = document.createElement('div');
-        cursorDot.className = 'cursor-dot';
-        document.body.appendChild(cursorDot);
-
-        cursorOutline = document.createElement('div');
-        cursorOutline.className = 'cursor-outline';
-        document.body.appendChild(cursorOutline);
-
-        let mouseX = 0, mouseY = 0;
-        let dotX = 0, dotY = 0;
-        let outlineX = 0, outlineY = 0;
-
-        document.addEventListener('mousemove', function(e) {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        });
-
-        // Smooth animation using requestAnimationFrame
-        function animateCursor() {
-            // Smooth follow for dot
-            dotX += (mouseX - dotX) * 0.3;
-            dotY += (mouseY - dotY) * 0.3;
-
-            // Even smoother follow for outline
-            outlineX += (mouseX - outlineX) * 0.15;
-            outlineY += (mouseY - outlineY) * 0.15;
-
-            cursorDot.style.left = dotX + 'px';
-            cursorDot.style.top = dotY + 'px';
-
-            cursorOutline.style.left = outlineX + 'px';
-            cursorOutline.style.top = outlineY + 'px';
-
-            requestAnimationFrame(animateCursor);
-        }
-
-        animateCursor();
-
-        // Hover effects
-        const hoverElements = document.querySelectorAll('a, button, .btn, .bike-card, .service-card');
-        hoverElements.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-                cursorDot.style.transform = 'translate(-50%, -50%) scale(0.5)';
-            });
-            el.addEventListener('mouseleave', () => {
-                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-                cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
-            });
-        });
-    }
-
-    // Only on desktop
-    if (window.innerWidth > 1024) {
-        initCustomCursor();
-    }
+    // Custom cursor has been removed for cleaner UX
 
 
     // ==========================================
@@ -575,33 +504,6 @@ style.textContent = `
         }
     }
 
-    /* Custom Cursor Styles */
-    .cursor-dot {
-        width: 8px;
-        height: 8px;
-        background-color: var(--color-accent);
-        border-radius: 50%;
-        position: fixed;
-        pointer-events: none;
-        z-index: 99999;
-        transform: translate(-50%, -50%);
-        transition: transform 0.2s ease;
-        mix-blend-mode: difference;
-    }
-
-    .cursor-outline {
-        width: 32px;
-        height: 32px;
-        border: 2px solid var(--color-accent);
-        border-radius: 50%;
-        position: fixed;
-        pointer-events: none;
-        z-index: 99998;
-        transform: translate(-50%, -50%);
-        transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-        mix-blend-mode: difference;
-        opacity: 0.5;
-    }
 
     /* Scroll Progress Bar */
     .scroll-progress {
@@ -675,13 +577,6 @@ style.textContent = `
         color: white;
     }
 
-    /* Hide custom cursor on mobile */
-    @media (max-width: 1024px) {
-        .cursor-dot,
-        .cursor-outline {
-            display: none !important;
-        }
-    }
 
     /* Smooth scrollbar */
     ::-webkit-scrollbar {
