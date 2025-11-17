@@ -1066,7 +1066,25 @@ footer {
         font-size: 1rem;
         letter-spacing: 0.15em;
     }
-    
+
+    /* Navigation hat im Mobile-Modus immer weißen Hintergrund */
+    .nav-wrapper {
+        background-color: rgba(255, 255, 255, 0.98) !important;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 2px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-wrapper .logo,
+    .nav-wrapper .nav-menu a {
+        color: var(--color-text) !important;
+        text-shadow: none !important;
+    }
+
+    .nav-wrapper .mobile-menu-toggle span {
+        background-color: var(--color-text) !important;
+        box-shadow: none !important;
+    }
+
     .nav-menu {
         position: fixed;
         top: 0;
