@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- Hero Section - Fullscreen Schwarz-Weiß -->
 <section class="hero">
-    <div class="hero-bg" style="background-image: url('assets/images/racing.jpg');"></div>
+    <div class="hero-bg" style="background-image: url('assets/images/weg.jpg');"></div>
     <div class="hero-content">
         <h1>Über<br>Bikepoint</h1>
         <p>Seit 2015 deine Radsport-Experten</p>
