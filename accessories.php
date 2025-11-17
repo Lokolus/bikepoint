@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- Hero Section -->
 <section class="hero">
-    <div class="hero-bg" style="background-image: url('assets/images/see.png');"></div>
+    <div class="hero-bg" style="background-image: url('assets/images/see.jpg');"></div>
     <div class="hero-content">
         <h1 style="letter-spacing: 0.3em;">BIKE<br>ACCESSORIES</h1>
         <p style="letter-spacing: 0.4em; font-size: 0.875rem;">Equipment · Style · Performance</p>
