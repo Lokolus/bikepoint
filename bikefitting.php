@@ -4,12 +4,12 @@ $has_hero = true;
 include 'includes/header.php';
 ?>
 
-<!-- Hero Section - Fullscreen Schwarz-Weiß -->
+<!-- Hero Section - Unique Bikefitting Style -->
 <section class="hero">
     <div class="hero-bg" style="background-image: url('assets/images/19.08.25-380.jpg');"></div>
     <div class="hero-content">
-        <h1>Professionelles<br>Bikefitting</h1>
-        <p>Maximiere Komfort & Leistung</p>
+        <h1 style="letter-spacing: 0.3em;">BIKE<br>FITTING</h1>
+        <p style="letter-spacing: 0.4em; font-size: 0.875rem;">Präzision · Analyse · Perfektion</p>
     </div>
     <div class="hero-scroll">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -19,76 +19,70 @@ include 'includes/header.php';
 </section>
 
 <main>
-    <!-- Elegante Intro-Sektion -->
-    <section style="padding: 5rem 0 4rem;">
+    <!-- Intro Section -->
+    <section style="padding: 6rem 0 4rem; background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-primary) 100%);">
         <div class="container">
-            <div class="fade-in" style="max-width: 1000px; margin: 0 auto; text-align: center;">
-                <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 100; line-height: 1.3; margin-bottom: 2rem; color: var(--color-text); letter-spacing: 0.15em;">
-                    Die perfekte Sitzposition für dich
+            <div class="fade-in" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <div style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(139, 157, 147, 0.1); border-radius: 50px; margin-bottom: 2rem;">
+                    <span style="font-size: 0.75rem; letter-spacing: 0.2em; color: var(--color-accent); text-transform: uppercase;">Biomechanische Analyse</span>
+                </div>
+                <h2 style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 100; line-height: 1.2; margin-bottom: 2rem; color: var(--color-text); letter-spacing: 0.1em;">
+                    Perfektion in<br>jedem Millimeter
                 </h2>
-                <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-light); max-width: 800px; margin: 0 auto 1.5rem;">
-                    Bikefitting ist die professionelle Anpassung deines Fahrrads an deine individuellen körperlichen Voraussetzungen.
-                    Eine optimale Sitzposition verbessert nicht nur deine Leistung, sondern beugt auch Schmerzen und Verletzungen vor.
-                </p>
-                <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); max-width: 750px; margin: 0 auto;">
-                    Mit modernster Videotechnologie und biomechanischer Analyse finden wir die ideale Position für dich.
-                    Ob Rennrad, MTB oder Gravel – jedes Bike wird individuell auf deinen Körper abgestimmt.
+                <p style="font-size: 1.125rem; line-height: 2; color: var(--color-text-light); max-width: 750px; margin: 0 auto;">
+                    Professionelles Bikefitting ist die Grundlage für maximalen Komfort, optimale Leistung und langfristige Gesundheit beim Radfahren.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Dünne Trennlinie -->
-    <div class="container">
-        <div style="height: 1px; background: linear-gradient(90deg, transparent, var(--color-border), transparent); margin: 0 auto; max-width: 800px;"></div>
-    </div>
-
-    <!-- Vorteile Section - Zweispaltig -->
-    <section style="padding: 4rem 0;">
+    <!-- Benefits Grid - Asymmetric Layout -->
+    <section style="padding: 4rem 0; background-color: var(--color-primary);">
         <div class="container">
             <div style="max-width: 1200px; margin: 0 auto;">
-                <h3 class="fade-in" style="font-size: 1.5rem; font-weight: 200; letter-spacing: 0.15em; text-align: center; margin-bottom: 3rem; text-transform: uppercase;">
-                    Warum Bikefitting?
-                </h3>
-
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem 5rem; max-width: 1000px; margin: 0 auto;">
-                    <div class="fade-in">
-                        <h4 style="font-size: 1.125rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Maximale Effizienz</h4>
-                        <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 0.75rem;">
-                            Optimiere deine Kraftübertragung und steigere deine Leistung durch die perfekte Sitzposition.
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 2rem;">
+                    <!-- Large card -->
+                    <div class="benefit-card fade-in" style="grid-column: span 2; background: var(--color-secondary); padding: 3rem; border-radius: 8px; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 1.5rem; right: 1.5rem; width: 60px; height: 60px; border-radius: 50%; background: rgba(139, 157, 147, 0.1); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 1.5rem;">⚡</span>
+                        </div>
+                        <h3 style="font-size: 1.75rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1.5rem;">Maximale Effizienz</h3>
+                        <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 1rem;">
+                            Optimiere deine Kraftübertragung durch die perfekte Anpassung von Sattel, Lenker und Pedalen an deine Anatomie.
                         </p>
-                        <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-light); opacity: 0.8;">
-                            Jeder Tritt wird effektiver, wenn Sattel, Lenker und Pedale optimal auf deine Anatomie abgestimmt sind.
-                        </p>
-                    </div>
-
-                    <div class="fade-in">
-                        <h4 style="font-size: 1.125rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Komfort & Gesundheit</h4>
-                        <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 0.75rem;">
-                            Vermeide Schmerzen in Rücken, Nacken, Knien und Händen durch ergonomische Anpassungen.
-                        </p>
-                        <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-light); opacity: 0.8;">
-                            Eine falsche Sitzposition führt langfristig zu Überlastungen. Wir korrigieren Fehlhaltungen bevor Probleme entstehen.
+                        <p style="font-size: 0.875rem; line-height: 1.8; color: var(--color-text-anthracite); opacity: 0.7;">
+                            Jeder Tritt wird effektiver, wenn deine Position biomechanisch optimal ist.
                         </p>
                     </div>
 
-                    <div class="fade-in">
-                        <h4 style="font-size: 1.125rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Verletzungsprävention</h4>
-                        <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 0.75rem;">
-                            Reduziere das Risiko von Überlastungen und chronischen Beschwerden nachhaltig.
+                    <!-- Small card 1 -->
+                    <div class="benefit-card fade-in" style="background: linear-gradient(135deg, #8B9D93 0%, #A0B3A8 100%); padding: 2.5rem; border-radius: 8px; color: white;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">💪</div>
+                        <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1rem; color: white;">Gesundheit</h3>
+                        <p style="font-size: 0.875rem; line-height: 1.8; color: rgba(255, 255, 255, 0.9);">
+                            Vermeide Schmerzen und Überlastungen durch ergonomische Anpassungen.
                         </p>
-                        <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-light); opacity: 0.8;">
-                            Präventiv handeln statt reagieren: Mit dem richtigen Setup vermeidest du die meisten typischen Rad-Beschwerden.
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <!-- Small card 2 -->
+                    <div class="benefit-card fade-in" style="background: var(--color-secondary); padding: 2.5rem; border-radius: 8px;">
+                        <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+                        <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1rem;">Prävention</h3>
+                        <p style="font-size: 0.875rem; line-height: 1.8; color: var(--color-text-light);">
+                            Reduziere das Risiko von Überlastungen und chronischen Beschwerden.
                         </p>
                     </div>
 
-                    <div class="fade-in">
-                        <h4 style="font-size: 1.125rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Mehr Fahrspaß</h4>
-                        <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 0.75rem;">
-                            Genieße längere Touren ohne Beschwerden und fahre entspannter als je zuvor.
-                        </p>
-                        <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-light); opacity: 0.8;">
-                            Wenn alles passt, kannst du dich voll aufs Fahren konzentrieren – ohne störende Druckstellen oder Verspannungen.
+                    <!-- Large card 2 -->
+                    <div class="benefit-card fade-in" style="grid-column: span 2; background: var(--color-secondary); padding: 3rem; border-radius: 8px; position: relative;">
+                        <div style="position: absolute; top: 1.5rem; right: 1.5rem; width: 60px; height: 60px; border-radius: 50%; background: rgba(139, 157, 147, 0.1); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 1.5rem;">😊</span>
+                        </div>
+                        <h3 style="font-size: 1.75rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1.5rem;">Mehr Fahrspaß</h3>
+                        <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light);">
+                            Genieße längere Touren ohne Beschwerden und konzentriere dich voll aufs Fahren.
                         </p>
                     </div>
                 </div>
@@ -96,87 +90,90 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <!-- Großes Bild Sektion -->
-    <section style="position: relative; min-height: 70vh; display: flex; align-items: center; justify-content: center; background-image: url('assets/images/19.08.25-229.jpg'); background-size: cover; background-position: center; filter: grayscale(100%);">
-        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));"></div>
-        <div class="fade-in" style="position: relative; z-index: 10; text-align: center; color: white; padding: 0 2rem; max-width: 800px;">
-            <p style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 100; line-height: 1.5; letter-spacing: 0.1em;">
-                Millimeter entscheiden über Komfort und Performance. Wir finden deine perfekte Position.
-            </p>
-        </div>
-    </section>
-
-    <!-- Dünne Trennlinie -->
-    <div class="container">
-        <div style="height: 1px; background: linear-gradient(90deg, transparent, var(--color-border), transparent); margin: 0 auto; max-width: 800px;"></div>
+    <!-- Divider -->
+    <div class="container" style="padding: 3rem 0;">
+        <div style="height: 1px; background: linear-gradient(90deg, transparent, var(--color-border), transparent); margin: 0 auto; max-width: 600px;"></div>
     </div>
 
-    <!-- Prozess Section -->
-    <section style="padding: 4rem 0; background-color: var(--color-primary);">
+    <!-- Process Timeline Section -->
+    <section class="process-timeline-section" style="padding: 5rem 0; background-color: var(--color-secondary); position: relative;">
         <div class="container">
             <div style="max-width: 1000px; margin: 0 auto;">
-                <h3 class="fade-in" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; text-align: center; margin-bottom: 3rem; letter-spacing: 0.15em;">
+                <h2 class="fade-in" style="font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 100; text-align: center; margin-bottom: 5rem; letter-spacing: 0.15em;">
                     Unser Prozess
-                </h3>
+                </h2>
 
-                <div style="display: grid; gap: 3rem;">
-                    <!-- Schritt 1 -->
-                    <div class="fade-in" style="display: grid; grid-template-columns: 60px 1fr; gap: 2rem; align-items: start;">
-                        <div style="font-size: 3rem; font-weight: 100; color: var(--color-accent); opacity: 0.4; line-height: 1;">01</div>
-                        <div>
-                            <h4 style="font-size: 1.25rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Anamnese & Zielsetzung</h4>
-                            <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light);">
-                                Ausführliches Gespräch über deine Fahrgewohnheiten, Ziele, bisherige Beschwerden und gesundheitliche Einschränkungen.
-                                Wir analysieren deinen Fahrstil und definieren gemeinsam die Anforderungen an deine optimale Sitzposition.
-                            </p>
+                <!-- Step 1 -->
+                <div class="process-step" style="display: grid; grid-template-columns: 80px 1fr; gap: 3rem; margin-bottom: 4rem; padding-left: 2rem;">
+                    <div class="step-number" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 100; color: white; box-shadow: 0 10px 30px rgba(139, 157, 147, 0.3); z-index: 1; position: relative;">01</div>
+                    <div class="step-content">
+                        <h3 style="font-size: 1.5rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--color-text);">Anamnese & Zielsetzung</h3>
+                        <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Ausführliches Gespräch über deine Fahrgewohnheiten, Ziele und gesundheitliche Voraussetzungen. Wir analysieren deinen Fahrstil und definieren gemeinsam die Anforderungen.
+                        </p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">INTERVIEW</span>
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">ZIELDEFINITION</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Schritt 2 -->
-                    <div class="fade-in" style="display: grid; grid-template-columns: 60px 1fr; gap: 2rem; align-items: start;">
-                        <div style="font-size: 3rem; font-weight: 100; color: var(--color-accent); opacity: 0.4; line-height: 1;">02</div>
-                        <div>
-                            <h4 style="font-size: 1.25rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Körperanalyse</h4>
-                            <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light);">
-                                Messung deiner Körpermaße, Flexibilitätstests und Analyse deiner Anatomie.
-                                Wir erfassen Beinlängen, Rumpf- und Armlänge sowie deine individuelle Beweglichkeit.
-                            </p>
+                <!-- Step 2 -->
+                <div class="process-step" style="display: grid; grid-template-columns: 80px 1fr; gap: 3rem; margin-bottom: 4rem; padding-left: 2rem;">
+                    <div class="step-number" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 100; color: white; box-shadow: 0 10px 30px rgba(139, 157, 147, 0.3); z-index: 1; position: relative;">02</div>
+                    <div class="step-content">
+                        <h3 style="font-size: 1.5rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--color-text);">Körperanalyse</h3>
+                        <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Präzise Messung deiner Körpermaße und Flexibilitätstests. Wir erfassen Beinlängen, Rumpf- und Armlänge sowie deine individuelle Beweglichkeit.
+                        </p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">VERMESSUNG</span>
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">FLEXIBILITÄT</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Schritt 3 -->
-                    <div class="fade-in" style="display: grid; grid-template-columns: 60px 1fr; gap: 2rem; align-items: start;">
-                        <div style="font-size: 3rem; font-weight: 100; color: var(--color-accent); opacity: 0.4; line-height: 1;">03</div>
-                        <div>
-                            <h4 style="font-size: 1.25rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Videoanalyse & Vermessung</h4>
-                            <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light);">
-                                Du fährst auf unserem Ergometer, während wir deine Position aus verschiedenen Winkeln filmen.
-                                Die Videoanalyse zeigt präzise, wo Optimierungspotenzial besteht.
-                            </p>
+                <!-- Step 3 -->
+                <div class="process-step" style="display: grid; grid-template-columns: 80px 1fr; gap: 3rem; margin-bottom: 4rem; padding-left: 2rem;">
+                    <div class="step-number" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 100; color: white; box-shadow: 0 10px 30px rgba(139, 157, 147, 0.3); z-index: 1; position: relative;">03</div>
+                    <div class="step-content">
+                        <h3 style="font-size: 1.5rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--color-text);">Videoanalyse</h3>
+                        <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Du fährst auf unserem Ergometer während wir deine Position aus verschiedenen Winkeln filmen. Die Videoanalyse zeigt präzise Optimierungspotenzial.
+                        </p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">VIDEO</span>
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">ANALYSE</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Schritt 4 -->
-                    <div class="fade-in" style="display: grid; grid-template-columns: 60px 1fr; gap: 2rem; align-items: start;">
-                        <div style="font-size: 3rem; font-weight: 100; color: var(--color-accent); opacity: 0.4; line-height: 1;">04</div>
-                        <div>
-                            <h4 style="font-size: 1.25rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Anpassung & Optimierung</h4>
-                            <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light);">
-                                Schrittweise Optimierung von Sattelhöhe, Sattelposition, Lenkerposition und -reichweite.
-                                Wir passen auch Cleat-Position, Vorbaulänge und Lenkerbreite individuell an.
-                            </p>
+                <!-- Step 4 -->
+                <div class="process-step" style="display: grid; grid-template-columns: 80px 1fr; gap: 3rem; margin-bottom: 4rem; padding-left: 2rem;">
+                    <div class="step-number" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 100; color: white; box-shadow: 0 10px 30px rgba(139, 157, 147, 0.3); z-index: 1; position: relative;">04</div>
+                    <div class="step-content">
+                        <h3 style="font-size: 1.5rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--color-text);">Anpassung & Optimierung</h3>
+                        <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Schrittweise Optimierung aller Kontaktpunkte. Wir passen Sattelhöhe, -position, Lenkerposition, Cleat-Position und Vorbaulänge individuell an.
+                        </p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">FEINTUNING</span>
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">OPTIMIERUNG</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Schritt 5 -->
-                    <div class="fade-in" style="display: grid; grid-template-columns: 60px 1fr; gap: 2rem; align-items: start;">
-                        <div style="font-size: 3rem; font-weight: 100; color: var(--color-accent); opacity: 0.4; line-height: 1;">05</div>
-                        <div>
-                            <h4 style="font-size: 1.25rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Dokumentation & Follow-up</h4>
-                            <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light);">
-                                Du erhältst ein detailliertes Protokoll mit allen Einstellungen, Fotos und individuellen Empfehlungen.
-                                Nach einigen Wochen besprechen wir gerne deine Erfahrungen und nehmen bei Bedarf Feintuning vor.
-                            </p>
+                <!-- Step 5 -->
+                <div class="process-step" style="display: grid; grid-template-columns: 80px 1fr; gap: 3rem; padding-left: 2rem;">
+                    <div class="step-number" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 100; color: white; box-shadow: 0 10px 30px rgba(139, 157, 147, 0.3); z-index: 1; position: relative;">05</div>
+                    <div class="step-content">
+                        <h3 style="font-size: 1.5rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--color-text);">Dokumentation & Follow-up</h3>
+                        <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Du erhältst ein detailliertes Protokoll mit allen Einstellungen, Fotos und individuellen Empfehlungen. Nach einigen Wochen besprechen wir deine Erfahrungen.
+                        </p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">PROTOKOLL</span>
+                            <span style="padding: 0.5rem 1rem; background: rgba(139, 157, 147, 0.1); border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--color-accent);">NACHBETREUUNG</span>
                         </div>
                     </div>
                 </div>
@@ -185,17 +182,21 @@ include 'includes/header.php';
     </section>
 
     <!-- CTA Section -->
-    <section style="padding: 4rem 0; text-align: center; background-color: #0A0A0A;">
-        <div class="container fade-in">
-            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 1.5rem; color: white;">
-                Bereit für deine perfekte Position?
+    <section style="padding: 5rem 0; text-align: center; background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background-image: url('assets/images/19.08.25-229.jpg'); background-size: cover; background-position: center; opacity: 0.15; filter: grayscale(100%);"></div>
+        <div class="container fade-in" style="position: relative; z-index: 1;">
+            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 1rem; color: white;">
+                Bereit für deine<br>perfekte Position?
             </h2>
-            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 2.5rem; letter-spacing: 0.1em;">
-                Vereinbare jetzt deinen Bikefitting-Termin und erlebe den Unterschied
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 3rem; letter-spacing: 0.15em; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Vereinbare jetzt deinen Bikefitting-Termin
             </p>
-            <a href="about.php" class="btn btn-primary">Jetzt Termin vereinbaren</a>
+            <a href="about.php" class="btn btn-primary cta-button-fitting" style="padding: 1.5rem 4rem; font-size: 0.875rem;">Jetzt Termin vereinbaren</a>
         </div>
     </section>
 </main>
 
 <?php include 'includes/footer.php'; ?>
+
+<!-- Page-specific JavaScript -->
+<script src="assets/js/bikefitting.js"></script>

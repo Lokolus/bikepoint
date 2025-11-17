@@ -1,366 +1,417 @@
-/**
- * VERKAUF PAGE - Interactive Features
- * Kreative Animationen für Bike-Shop
- */
+// ==========================================
+// VERKAUF - Interactive Product Grid & Filters
+// Unique Features: Category Tabs, Image Zoom, Product Cards
+// ==========================================
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Stagger Animation for Cards
-    initStaggerAnimation();
+    // ==========================================
+    // CATEGORY FILTER TABS WITH SMOOTH TRANSITION
+    // ==========================================
 
-    // Interactive Category Cards
-    initCategoryCardEffects();
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    const bikeGrids = document.querySelectorAll('.bike-category-grid');
 
-    // Parallax Scroll for Images
-    initParallaxScroll();
+    if (categoryTabs.length > 0) {
+        // Create tab indicator
+        const tabContainer = categoryTabs[0].parentElement;
+        const indicator = document.createElement('div');
+        indicator.className = 'tab-active-indicator';
+        tabContainer.appendChild(indicator);
 
-    // Hover Glow Effects
-    initHoverGlowEffects();
+        function updateIndicator(activeTab) {
+            const rect = activeTab.getBoundingClientRect();
+            const containerRect = tabContainer.getBoundingClientRect();
+            indicator.style.width = rect.width + 'px';
+            indicator.style.left = (rect.left - containerRect.left) + 'px';
+        }
 
-    // Component Cards Animation
-    initComponentCardsAnimation();
+        categoryTabs.forEach((tab, index) => {
+            tab.addEventListener('click', function() {
+                const category = this.dataset.category;
 
-    // Scroll-triggered Animations
-    initScrollAnimations();
+                // Update active state
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                updateIndicator(this);
 
-    // Filter/Search functionality (for future enhancement)
-    initBikeFilter();
-});
-
-/**
- * Stagger Animation for Grid Items
- */
-function initStaggerAnimation() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('stagger-item');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Observe category cards
-    document.querySelectorAll('.category-card').forEach(card => {
-        observer.observe(card);
-    });
-
-    // Observe benefit boxes
-    document.querySelectorAll('.benefit-box').forEach(box => {
-        observer.observe(box);
-    });
-}
-
-/**
- * Interactive Category Card Effects
- */
-function initCategoryCardEffects() {
-    const categoryCards = document.querySelectorAll('.category-card');
-
-    categoryCards.forEach(card => {
-        // Add ripple effect on click
-        card.addEventListener('click', function(e) {
-            const ripple = document.createElement('div');
-            ripple.className = 'ripple';
-            ripple.style.cssText = `
-                position: absolute;
-                border-radius: 50%;
-                background: rgba(139, 157, 147, 0.3);
-                width: 100px;
-                height: 100px;
-                margin-left: -50px;
-                margin-top: -50px;
-                pointer-events: none;
-                animation: ripple-effect 0.8s ease-out;
-            `;
-
-            const rect = card.getBoundingClientRect();
-            ripple.style.left = (e.clientX - rect.left) + 'px';
-            ripple.style.top = (e.clientY - rect.top) + 'px';
-
-            card.appendChild(ripple);
-
-            setTimeout(() => ripple.remove(), 800);
-        });
-
-        // 3D tilt effect
-        card.addEventListener('mousemove', function(e) {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-
-            const rotateX = (y - centerY) / 15;
-            const rotateY = (centerX - x) / 15;
-
-            card.style.transform = `
-                perspective(1000px)
-                rotateX(${rotateX}deg)
-                rotateY(${rotateY}deg)
-                translateY(-15px)
-                scale(1.02)
-            `;
-        });
-
-        card.addEventListener('mouseleave', function() {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0) scale(1)';
-        });
-    });
-}
-
-/**
- * Parallax Scroll Effect
- */
-function initParallaxScroll() {
-    let ticking = false;
-
-    window.addEventListener('scroll', () => {
-        if (!ticking) {
-            window.requestAnimationFrame(() => {
-                const scrolled = window.pageYOffset;
-
-                // Parallax for category cards
-                document.querySelectorAll('.category-card').forEach((card, index) => {
-                    const rect = card.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        const speed = 0.03 * (index % 2 === 0 ? 1 : -1);
-                        const yPos = -(scrolled * speed);
-                        card.style.backgroundPosition = `center ${yPos}px`;
+                // Filter categories
+                bikeGrids.forEach(grid => {
+                    if (category === 'all' || grid.dataset.category === category) {
+                        grid.style.display = 'grid';
+                        setTimeout(() => {
+                            grid.style.opacity = '1';
+                            grid.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        grid.style.opacity = '0';
+                        grid.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            grid.style.display = 'none';
+                        }, 300);
                     }
                 });
-
-                ticking = false;
             });
 
-            ticking = true;
-        }
-    });
-}
-
-/**
- * Hover Glow Effects
- */
-function initHoverGlowEffects() {
-    const glowElements = document.querySelectorAll('.category-card, .financing-card');
-
-    glowElements.forEach(element => {
-        element.addEventListener('mouseenter', function() {
-            this.style.filter = 'brightness(1.05)';
-            this.style.transition = 'all 0.4s ease';
+            // Initialize first tab
+            if (index === 0) {
+                setTimeout(() => updateIndicator(tab), 100);
+            }
         });
+    }
 
-        element.addEventListener('mouseleave', function() {
-            this.style.filter = 'brightness(1)';
-        });
-    });
-}
 
-/**
- * Component Cards Animation
- */
-function initComponentCardsAnimation() {
-    const componentCards = document.querySelectorAll('.component-card');
+    // ==========================================
+    // BIKE CARDS WITH IMAGE ZOOM & OVERLAY
+    // ==========================================
 
-    componentCards.forEach((card, index) => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px) scale(0.9)';
+    const bikeCards = document.querySelectorAll('.bike-card-verkauf');
 
-        setTimeout(() => {
-            card.style.transition = 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0) scale(1)';
-        }, index * 80);
-    });
-
-    // Rotate on hover
-    componentCards.forEach(card => {
-        let rotation = 0;
+    bikeCards.forEach(card => {
+        const image = card.querySelector('.bike-image-zoom');
+        const overlay = card.querySelector('.bike-hover-overlay');
+        const quickView = card.querySelector('.quick-view-btn');
 
         card.addEventListener('mouseenter', function() {
-            rotation = Math.random() * 10 - 5; // Random rotation between -5 and 5 degrees
-            this.style.transform = `translateY(-8px) rotate(${rotation}deg)`;
+            if (image) {
+                image.style.transform = 'scale(1.15)';
+                image.style.filter = 'grayscale(0%)';
+            }
+
+            if (overlay) {
+                overlay.style.opacity = '1';
+            }
+
+            if (quickView) {
+                quickView.style.transform = 'translateY(0)';
+                quickView.style.opacity = '1';
+            }
+
+            this.style.transform = 'translateY(-10px)';
+            this.style.boxShadow = '0 25px 60px rgba(0, 0, 0, 0.2)';
         });
 
         card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) rotate(0deg)';
+            if (image) {
+                image.style.transform = 'scale(1)';
+                image.style.filter = 'grayscale(100%)';
+            }
+
+            if (overlay) {
+                overlay.style.opacity = '0';
+            }
+
+            if (quickView) {
+                quickView.style.transform = 'translateY(20px)';
+                quickView.style.opacity = '0';
+            }
+
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = 'none';
         });
     });
-}
 
-/**
- * Scroll-triggered Animations
- */
-function initScrollAnimations() {
-    const animateOnScroll = (entries, observer) => {
+
+    // ==========================================
+    // STAGGERED CARD REVEAL ANIMATION
+    // ==========================================
+
+    const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-                observer.unobserve(entry.target);
+                const cards = entry.target.querySelectorAll('.bike-card-verkauf');
+                cards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0) scale(1)';
+                    }, index * 100);
+                });
+                revealObserver.unobserve(entry.target);
             }
         });
-    };
+    }, { threshold: 0.1 });
 
-    const scrollObserver = new IntersectionObserver(animateOnScroll, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
+    bikeGrids.forEach(grid => {
+        revealObserver.observe(grid);
+
+        const cards = grid.querySelectorAll('.bike-card-verkauf');
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(40px) scale(0.95)';
+            card.style.transition = 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
+        });
     });
 
-    // Animate financing cards
-    document.querySelectorAll('.financing-card').forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(40px)';
-        card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-        scrollObserver.observe(card);
-    });
 
-    // Animate feature items
-    document.querySelectorAll('.feature-item').forEach((item, index) => {
+    // ==========================================
+    // FEATURE HIGHLIGHTS WITH SLIDE-IN
+    // ==========================================
+
+    const featureItems = document.querySelectorAll('.verkauf-feature');
+
+    const featureObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, idx) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateX(0)';
+                }, idx * 100);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    featureItems.forEach(item => {
+        featureObserver.observe(item);
         item.style.opacity = '0';
         item.style.transform = 'translateX(-30px)';
-        item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-        scrollObserver.observe(item);
-    });
-}
+        item.style.transition = 'all 0.6s ease';
 
-/**
- * Bike Filter/Search (Placeholder for future enhancement)
- */
-function initBikeFilter() {
-    // Could be used to filter bikes by category, price range, etc.
-    const filterButtons = document.querySelectorAll('[data-filter]');
+        // Hover effect
+        item.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = 'rgba(139, 157, 147, 0.08)';
+            this.style.paddingLeft = '2rem';
+        });
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            console.log('Filter applied:', filter);
-            // Future implementation
+        item.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'transparent';
+            this.style.paddingLeft = '1rem';
         });
     });
-}
 
-/**
- * Add ripple effect CSS
- */
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes ripple-effect {
+
+    // ==========================================
+    // PROCESS STEPS WITH NUMBER ANIMATION
+    // ==========================================
+
+    const processSteps = document.querySelectorAll('.verkauf-step');
+
+    const processObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('step-active');
+
+                    const stepNum = entry.target.querySelector('.step-number-verkauf');
+                    if (stepNum) {
+                        stepNum.style.animation = 'stepNumberBounce 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55)';
+                    }
+                }, index * 200);
+            }
+        });
+    }, { threshold: 0.4 });
+
+    processSteps.forEach(step => processObserver.observe(step));
+
+
+    // ==========================================
+    // BRAND LOGOS CAROUSEL
+    // ==========================================
+
+    const brandLogos = document.querySelectorAll('.brand-logo');
+    if (brandLogos.length > 0) {
+        let currentBrand = 0;
+
+        setInterval(() => {
+            brandLogos[currentBrand].style.opacity = '0.4';
+            brandLogos[currentBrand].style.transform = 'scale(1)';
+
+            currentBrand = (currentBrand + 1) % brandLogos.length;
+
+            brandLogos[currentBrand].style.opacity = '1';
+            brandLogos[currentBrand].style.transform = 'scale(1.15)';
+        }, 2500);
+    }
+
+
+    // ==========================================
+    // LIGHTBOX FOR BIKE IMAGES
+    // ==========================================
+
+    const bikeImages = document.querySelectorAll('.bike-image-clickable');
+
+    bikeImages.forEach(img => {
+        img.addEventListener('click', function() {
+            createImageLightbox(this.src);
+        });
+
+        img.style.cursor = 'zoom-in';
+    });
+
+    function createImageLightbox(imageSrc) {
+        const lightbox = document.createElement('div');
+        lightbox.className = 'image-lightbox';
+        lightbox.innerHTML = `
+            <div class="lightbox-backdrop"></div>
+            <div class="lightbox-content">
+                <img src="${imageSrc}" alt="Bike Image">
+                <button class="lightbox-close-btn">&times;</button>
+            </div>
+        `;
+
+        document.body.appendChild(lightbox);
+        document.body.style.overflow = 'hidden';
+
+        setTimeout(() => lightbox.classList.add('lightbox-active'), 10);
+
+        const closeBtn = lightbox.querySelector('.lightbox-close-btn');
+        const backdrop = lightbox.querySelector('.lightbox-backdrop');
+
+        [closeBtn, backdrop].forEach(el => {
+            el.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox-active');
+                setTimeout(() => {
+                    lightbox.remove();
+                    document.body.style.overflow = '';
+                }, 300);
+            });
+        });
+    }
+
+});
+
+
+// ==========================================
+// CSS ANIMATIONS & STYLES
+// ==========================================
+
+const styles = document.createElement('style');
+styles.textContent = `
+    @keyframes stepNumberBounce {
         0% {
-            transform: scale(0);
-            opacity: 0.8;
+            transform: scale(0) rotate(-180deg);
+            opacity: 0;
+        }
+        60% {
+            transform: scale(1.2) rotate(10deg);
         }
         100% {
-            transform: scale(4);
-            opacity: 0;
+            transform: scale(1) rotate(0deg);
+            opacity: 1;
         }
     }
 
-    .category-card {
+    .tab-active-indicator {
+        position: absolute;
+        bottom: -2px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover));
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 2px 12px rgba(139, 157, 147, 0.5);
+        border-radius: 2px 2px 0 0;
+    }
+
+    .bike-hover-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        pointer-events: none;
+    }
+
+    .quick-view-btn {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(20px);
+        opacity: 0;
+        transition: all 0.4s ease;
+        background: var(--color-accent);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 4px;
+        font-size: 0.875rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .bike-image-zoom {
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        filter: grayscale(100%);
+    }
+
+    .bike-card-verkauf {
         position: relative;
         overflow: hidden;
+        transition: all 0.4s ease;
     }
-`;
-document.head.appendChild(style);
 
-/**
- * Image Lazy Loading Enhancement
- */
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.style.opacity = '0';
-                img.style.transition = 'opacity 0.6s ease';
+    .step-active {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
 
-                if (img.dataset.src) {
-                    img.src = img.dataset.src;
-                    img.onload = () => {
-                        img.style.opacity = '1';
-                    };
-                }
-
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
-    });
-}
-
-/**
- * Smooth scroll for anchor links
- */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href !== '#') {
-            e.preventDefault();
-            const target = document.querySelector(href);
-
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
-    });
-});
-
-/**
- * Add particle effect on hover (subtle)
- */
-function createParticle(x, y) {
-    const particle = document.createElement('div');
-    particle.style.cssText = `
+    .image-lightbox {
         position: fixed;
-        width: 5px;
-        height: 5px;
-        background: var(--color-accent);
-        border-radius: 50%;
-        pointer-events: none;
-        left: ${x}px;
-        top: ${y}px;
-        opacity: 0.6;
-        animation: particle-float 1s ease-out forwards;
-        z-index: 9999;
-    `;
+        inset: 0;
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 
-    document.body.appendChild(particle);
-    setTimeout(() => particle.remove(), 1000);
-}
+    .image-lightbox.lightbox-active {
+        opacity: 1;
+    }
 
-const particleStyle = document.createElement('style');
-particleStyle.textContent = `
-    @keyframes particle-float {
-        to {
-            transform: translateY(-100px);
-            opacity: 0;
+    .lightbox-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.95);
+        cursor: pointer;
+    }
+
+    .lightbox-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90vh;
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+    }
+
+    .lightbox-active .lightbox-content {
+        transform: scale(1);
+    }
+
+    .lightbox-content img {
+        max-width: 100%;
+        max-height: 90vh;
+        object-fit: contain;
+        display: block;
+    }
+
+    .lightbox-close-btn {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        line-height: 1;
+        padding: 0;
+    }
+
+    .lightbox-close-btn:hover {
+        transform: rotate(90deg) scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+        .lightbox-close-btn {
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 2rem;
         }
     }
 `;
-document.head.appendChild(particleStyle);
-
-// Add particles on category card hover
-document.querySelectorAll('.category-card').forEach(card => {
-    card.addEventListener('mouseenter', function(e) {
-        for (let i = 0; i < 3; i++) {
-            setTimeout(() => {
-                const rect = card.getBoundingClientRect();
-                const x = rect.left + Math.random() * rect.width;
-                const y = rect.top + Math.random() * rect.height;
-                createParticle(x, y);
-            }, i * 100);
-        }
-    });
-});
+document.head.appendChild(styles);
