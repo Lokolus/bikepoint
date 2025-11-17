@@ -1082,6 +1082,8 @@ footer {
         transition: var(--transition-smooth);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         border-bottom: 1px solid rgba(139, 157, 147, 0.1);
+        z-index: 9998;
+        pointer-events: none;
     }
 
     .nav-menu a {
@@ -1093,6 +1095,7 @@ footer {
     .nav-menu.active {
         transform: translateY(0);
         opacity: 1;
+        pointer-events: auto;
     }
     
     .mobile-menu-toggle {
