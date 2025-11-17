@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- Hero Section -->
 <section class="hero">
-    <div class="hero-bg" style="background-image: url('assets/images/19.08.25-380.jpg');"></div>
+    <div class="hero-bg" style="background-image: url('assets/images/bergab.jpg');"></div>
     <div class="hero-content">
         <h1 style="letter-spacing: 0.3em;">BIKE<br>FITTING</h1>
         <p style="letter-spacing: 0.4em; font-size: 0.875rem;">Präzision · Analyse · Perfektion</p>
@@ -236,7 +236,7 @@ include 'includes/header.php';
 
     <!-- CTA Section -->
     <section style="padding: 3.5rem 0; text-align: center; background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%); position: relative; overflow: hidden;">
-        <div style="position: absolute; inset: 0; background-image: url('assets/images/19.08.25-229.jpg'); background-size: cover; background-position: center; opacity: 0.15; filter: grayscale(100%);"></div>
+        <div style="position: absolute; inset: 0; background-image: url('assets/images/wadeln.jpg'); background-size: cover; background-position: center; opacity: 0.15; filter: grayscale(100%);"></div>
         <div class="container fade-in" style="position: relative; z-index: 1;">
             <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 0.85rem; color: white;">
                 Bereit für deine perfekte Position?
