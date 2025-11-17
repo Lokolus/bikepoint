@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bikepoint - Premium Bike Rental & Service in Salzburg. Ride. Explore. Enjoy.">
-    <meta name="keywords" content="bike rental, fahrradverleih, mountain bike, e-bike, salzburg">
+    <meta name="description" content="Bikepoint Maria Alm - Premium Fahrradverleih, E-Bike Verleih, Mountainbike Verkauf & Bikefitting im Salzburger Land. Bike Shop in der Hochkönig Region mit Service & Werkstatt.">
+    <meta name="keywords" content="bikepoint maria alm, fahrradverleih maria alm, e-bike verleih salzburg, mountainbike verleih, bike shop maria alm, bikefitting, mtb verleih, e-mtb, bike service salzburger land, hochkönig, fahrradwerkstatt, bike reparatur, rennrad, gravel bike">
     <meta name="author" content="Bikepoint">
     
     <title><?php echo isset($page_title) ? $page_title . ' | Bikepoint' : 'Bikepoint - Ride. Explore. Enjoy.'; ?></title>
