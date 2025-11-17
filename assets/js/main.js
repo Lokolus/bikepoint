@@ -13,8 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-menu a');
-    
-    // Navigation is always sticky and visible - no scroll effect needed
+
+    // Scroll Effect für Navigation
+    let lastScroll = 0;
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 50) {
+            navWrapper.classList.add('scrolled');
+        } else {
+            navWrapper.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+    });
     
     // Mobile Menu Toggle
     if (mobileToggle) {
