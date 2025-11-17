@@ -3,12 +3,21 @@
    Kreative Effekte für Bike-Shop
    ========================================== */
 
+/* Section Spacing */
+.section {
+    padding: 8rem 0;
+}
+
+.section h2 {
+    margin-bottom: 4rem;
+}
+
 /* Bike Categories Grid - Enhanced */
 .bike-categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 4rem;
+    margin-top: 4rem;
 }
 
 .category-card {
@@ -39,7 +48,7 @@
 }
 
 .category-content {
-    padding: 2.5rem;
+    padding: 3rem 2.5rem;
 }
 
 .category-content h3 {
@@ -122,39 +131,24 @@
 /* Service Benefits Grid */
 .benefits-showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
 }
 
 .benefit-box {
     background: white;
-    padding: 2.5rem 2rem;
-    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    border-radius: 8px;
     text-align: center;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: relative;
-    overflow: hidden;
-}
-
-.benefit-box::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
-    transition: width 0.5s ease;
-}
-
-.benefit-box:hover::after {
-    width: 100%;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(139, 157, 147, 0.12);
 }
 
 .benefit-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(139, 157, 147, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(139, 157, 147, 0.15);
+    border-color: rgba(139, 157, 147, 0.25);
 }
 
 .benefit-box h3 {
@@ -172,14 +166,14 @@
 /* Financing Cards */
 .financing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3.5rem;
+    margin-top: 3rem;
 }
 
 .financing-card {
     background: white;
-    padding: 2.5rem 2rem;
+    padding: 3rem 2.5rem;
     border-radius: 8px;
     border: 1px solid rgba(139, 157, 147, 0.12);
     transition: all 0.4s ease;
@@ -214,13 +208,13 @@
 /* Feature Checkmarks Grid */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
 }
 
 .feature-item {
-    padding: 1.5rem;
+    padding: 2.5rem 2rem;
     background: white;
     border-radius: 8px;
     transition: all 0.4s ease;
@@ -265,13 +259,14 @@
 /* Components Section */
 .components-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
 }
 
 .component-card {
     background: white;
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 2rem;
     border-radius: 8px;
     text-align: center;
     transition: all 0.4s ease;
