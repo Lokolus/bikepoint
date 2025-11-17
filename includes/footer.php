@@ -4,30 +4,30 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>BIKEPOINT</h3>
-                    <p>Your premium bike rental and service partner in Salzburg.</p>
+                    <p>Dein Premium Bike-Verleih und Service Partner in Maria Alm.</p>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>QUICK LINKS</h3>
+                    <h3>LINKS</h3>
                     <ul class="footer-links">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="rental.php">Rental & Service</a></li>
-                        <li><a href="about.php">About & Contact</a></li>
+                        <li><a href="rental.php">Verleih & Service</a></li>
+                        <li><a href="about.php">Über uns & Kontakt</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>HOURS</h3>
+                    <h3>ÖFFNUNGSZEITEN</h3>
                     <p>
-                        Monday - Saturday<br>
+                        Montag - Samstag<br>
                         9:00 - 18:00<br>
-                        Sunday: Closed
+                        Sonntag: Geschlossen
                     </p>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> Bikepoint. All rights reserved.</p>
+                <p>&copy; <?php echo date('Y'); ?> Bikepoint. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>

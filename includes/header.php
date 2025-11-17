@@ -25,8 +25,8 @@
                 
                 <ul class="nav-menu">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="rental.php">Rental & Service</a></li>
-                    <li><a href="about.php">About & Contact</a></li>
+                    <li><a href="rental.php">Verleih & Service</a></li>
+                    <li><a href="about.php">Über uns & Kontakt</a></li>
                 </ul>
                 
                 <div class="mobile-menu-toggle">

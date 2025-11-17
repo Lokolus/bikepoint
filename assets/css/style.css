@@ -104,10 +104,32 @@ button {
     transition: var(--transition-smooth);
 }
 
+/* White navigation for dark hero background */
+.nav-wrapper .logo,
+.nav-wrapper .nav-menu a,
+.nav-wrapper .mobile-menu-toggle span {
+    color: white;
+    transition: var(--transition-fast);
+}
+
+.nav-wrapper .mobile-menu-toggle span {
+    background-color: white;
+}
+
+/* Scrolled state - switch to dark */
 .nav-wrapper.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav-wrapper.scrolled .logo,
+.nav-wrapper.scrolled .nav-menu a {
+    color: var(--color-text);
+}
+
+.nav-wrapper.scrolled .mobile-menu-toggle span {
+    background-color: var(--color-text);
 }
 
 nav {
@@ -138,7 +160,6 @@ nav {
     font-size: 0.875rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--color-text-light);
     position: relative;
     transition: var(--transition-fast);
 }
