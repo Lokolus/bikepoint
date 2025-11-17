@@ -10,8 +10,9 @@
                 <div class="footer-section">
                     <h3>LINKS</h3>
                     <ul class="footer-links">
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="verkauf.php">Verkauf</a></li>
                         <li><a href="rental.php">Verleih & Service</a></li>
+                        <li><a href="bikefitting.php">Bikefitting</a></li>
                         <li><a href="about.php">Über uns & Kontakt</a></li>
                     </ul>
                 </div>

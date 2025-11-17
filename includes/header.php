@@ -27,7 +27,6 @@
                 </a>
 
                 <ul class="nav-menu">
-                    <li><a href="index.php"<?php echo ($page_title == 'Home') ? ' class="active"' : ''; ?>>Home</a></li>
                     <li><a href="verkauf.php"<?php echo ($page_title == 'Bike Verkauf') ? ' class="active"' : ''; ?>>Verkauf</a></li>
                     <li><a href="rental.php"<?php echo ($page_title == 'Verleih & Service') ? ' class="active"' : ''; ?>>Verleih & Service</a></li>
                     <li><a href="bikefitting.php"<?php echo ($page_title == 'Bikefitting') ? ' class="active"' : ''; ?>>Bikefitting</a></li>
