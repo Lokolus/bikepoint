@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- Hero Section - Fullscreen Schwarz-Weiß -->
 <section class="hero">
-    <div class="hero-bg" style="background-image: url('assets/images/19.08.25-330.jpg');"></div>
+    <div class="hero-bg" style="background-image: url('assets/images/racing.jpg');"></div>
     <div class="hero-content">
         <h1>Über<br>Bikepoint</h1>
         <p>Seit 2015 deine Radsport-Experten</p>
@@ -113,7 +113,7 @@ include 'includes/header.php';
     </section>
 
     <!-- Großes Bild Sektion -->
-    <section style="position: relative; min-height: 70vh; display: flex; align-items: center; justify-content: center; background-image: url('assets/images/19.08.25-380.jpg'); background-size: cover; background-position: center; filter: grayscale(100%);">
+    <section style="position: relative; min-height: 70vh; display: flex; align-items: center; justify-content: center; background-image: url('assets/images/kuh.jpg'); background-size: cover; background-position: center; filter: grayscale(100%);">
         <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));"></div>
         <div class="fade-in" style="position: relative; z-index: 10; text-align: center; color: white; padding: 0 2rem; max-width: 800px;">
             <p style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 100; line-height: 1.5; letter-spacing: 0.1em;">

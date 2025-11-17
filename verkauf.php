@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- Hero Section - Dynamic Verkauf Style -->
 <section class="hero">
-    <div class="hero-bg" style="background-image: url('assets/images/19.08.25-229.jpg'); animation: heroZoom 30s ease-in-out infinite alternate;"></div>
+    <div class="hero-bg" style="background-image: url('assets/images/racing.jpg'); animation: heroZoom 30s ease-in-out infinite alternate;"></div>
     <div class="hero-content">
         <h1 style="letter-spacing: 0.35em; font-size: clamp(3.5rem, 9vw, 7rem);">PREMIUM<br>BIKES</h1>
         <p style="letter-spacing: 0.5em; font-size: 0.8rem;">Find · Test · Ride</p>

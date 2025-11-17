@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- Hero Section -->
 <section class="hero">
-    <div class="hero-bg" style="background-image: url('assets/images/19.08.25-380.jpg');"></div>
+    <div class="hero-bg" style="background-image: url('assets/images/chill.jpg');"></div>
     <div class="hero-content">
         <h1 style="letter-spacing: 0.3em;">BIKE<br>ACCESSORIES</h1>
         <p style="letter-spacing: 0.4em; font-size: 0.875rem;">Equipment · Style · Performance</p>
@@ -212,7 +212,7 @@ include 'includes/header.php';
     <section style="padding: 0; background-color: var(--color-primary); position: relative; overflow: hidden;">
         <div style="position: relative; min-height: 500px; display: flex; align-items: center; justify-content: center;">
             <!-- Background Image -->
-            <div style="position: absolute; inset: 0; background-image: url('assets/images/19.08.25-229.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); opacity: 0.3;"></div>
+            <div style="position: absolute; inset: 0; background-image: url('assets/images/19.08.25-330.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); opacity: 0.3;"></div>
 
             <!-- Overlay -->
             <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.5));"></div>

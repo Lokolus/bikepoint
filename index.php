@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <!-- Hero Section - Ultra-minimalistisch -->
 <section class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg" style="background-image: url('assets/images/3.jpg');"></div>
     <div class="hero-content">
         <h1>BIKEPOINT</h1>
         <p>Fahren. Entdecken. Genießen.</p>
