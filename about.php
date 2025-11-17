@@ -4,7 +4,7 @@ $has_hero = true;
 include 'includes/header.php';
 ?>
 
-<!-- Hero Section - Fullscreen Schwarz-Weiß wie Homepage -->
+<!-- Hero Section - Fullscreen Schwarz-Weiß -->
 <section class="hero">
     <div class="hero-bg" style="background-image: url('assets/images/19.08.25-330.jpg');"></div>
     <div class="hero-content">
@@ -20,154 +20,183 @@ include 'includes/header.php';
 
 <main>
     <!-- About Section -->
-    <section class="section-spacing">
+    <section style="padding: 5rem 0 4rem;">
         <div class="container">
-            <div class="fade-in" style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <p style="font-size: 1.125rem; line-height: 2; color: var(--color-text-light); margin-bottom: 3rem;">
+            <div class="fade-in" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 100; line-height: 1.3; margin-bottom: 2rem; color: var(--color-text); letter-spacing: 0.15em;">
+                    Leidenschaft für Radsport
+                </h2>
+                <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-light); max-width: 800px; margin: 0 auto 1.5rem;">
                     Gegründet 2015, bedient Bikepoint Radsport-Enthusiasten mit Leidenschaft und Hingabe.
                     Unsere Mission ist einfach: Premium-Bikes und außergewöhnlichen Service bieten, damit jede Fahrt unvergesslich wird.
                 </p>
-
-                <p style="font-size: 1.125rem; line-height: 2; color: var(--color-text-light); margin-bottom: 6rem;">
+                <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); max-width: 750px; margin: 0 auto;">
                     Im Herzen von Maria Alm gelegen, sind wir perfekt positioniert um dir zu helfen, die Schönheit
-                    der österreichischen Radrouten zu entdecken.
+                    der österreichischen Radrouten zu entdecken. Von Bergpfaden bis zu malerischen Straßen wird jede Fahrt mit Bikepoint zu einem unvergesslichen Abenteuer.
                 </p>
+            </div>
 
-                <!-- Stats -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4rem; margin-top: 6rem;">
-                    <div style="text-align: center;">
-                        <div style="font-size: 4rem; font-weight: 100; color: var(--color-accent); margin-bottom: 1rem; letter-spacing: 0.05em;">2000+</div>
-                        <div style="font-size: 0.875rem; color: var(--color-text-light); letter-spacing: 0.1em; text-transform: uppercase;">Glückliche Fahrer</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="font-size: 4rem; font-weight: 100; color: var(--color-accent); margin-bottom: 1rem; letter-spacing: 0.05em;">50+</div>
-                        <div style="font-size: 0.875rem; color: var(--color-text-light); letter-spacing: 0.1em; text-transform: uppercase;">Premium Bikes</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="font-size: 4rem; font-weight: 100; color: var(--color-accent); margin-bottom: 1rem; letter-spacing: 0.05em;">9</div>
-                        <div style="font-size: 0.875rem; color: var(--color-text-light); letter-spacing: 0.1em; text-transform: uppercase;">Jahre Erfahrung</div>
-                    </div>
+            <!-- Stats -->
+            <div class="fade-in" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-top: 4rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div style="text-align: center;">
+                    <div style="font-size: 4rem; font-weight: 100; color: var(--color-accent); margin-bottom: 0.75rem; letter-spacing: 0.05em;">2000+</div>
+                    <div style="font-size: 0.875rem; color: var(--color-text-light); letter-spacing: 0.1em; text-transform: uppercase;">Glückliche Fahrer</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 4rem; font-weight: 100; color: var(--color-accent); margin-bottom: 0.75rem; letter-spacing: 0.05em;">50+</div>
+                    <div style="font-size: 0.875rem; color: var(--color-text-light); letter-spacing: 0.1em; text-transform: uppercase;">Premium Bikes</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 4rem; font-weight: 100; color: var(--color-accent); margin-bottom: 0.75rem; letter-spacing: 0.05em;">9</div>
+                    <div style="font-size: 0.875rem; color: var(--color-text-light); letter-spacing: 0.1em; text-transform: uppercase;">Jahre Erfahrung</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="section-spacing" style="background-color: var(--color-primary);">
-        <div class="container">
-            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-md);">
-                <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em;">Unser Team</h2>
-            </div>
-
-            <div class="fade-in" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8rem;">
-                <!-- Michael Berg -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 2rem; border-radius: 50%; background: linear-gradient(135deg, #2C3E50 0%, #4A5568 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: bold; color: rgba(255, 255, 255, 0.1); filter: grayscale(100%);">MB</div>
-                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 0.5rem;">Michael Berg</h3>
-                    <p style="font-size: 0.875rem; color: var(--color-accent); letter-spacing: 0.1em;">Gründer & Inhaber</p>
-                </div>
-
-                <!-- Sarah Winter -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 2rem; border-radius: 50%; background: linear-gradient(135deg, #2C3E50 0%, #4A5568 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: bold; color: rgba(255, 255, 255, 0.1); filter: grayscale(100%);">SW</div>
-                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 0.5rem;">Sarah Winter</h3>
-                    <p style="font-size: 0.875rem; color: var(--color-accent); letter-spacing: 0.1em;">Service Managerin</p>
-                </div>
-
-                <!-- Tom Müller -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 2rem; border-radius: 50%; background: linear-gradient(135deg, #2C3E50 0%, #4A5568 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: bold; color: rgba(255, 255, 255, 0.1); filter: grayscale(100%);">TM</div>
-                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 0.5rem;">Tom Müller</h3>
-                    <p style="font-size: 0.875rem; color: var(--color-accent); letter-spacing: 0.1em;">Verleih Spezialist</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Dünne Trennlinie -->
+    <div class="container">
+        <div style="height: 1px; background: linear-gradient(90deg, transparent, var(--color-border), transparent); margin: 0 auto; max-width: 800px;"></div>
+    </div>
 
     <!-- Values Section -->
-    <section class="section-spacing">
+    <section style="padding: 4rem 0;">
         <div class="container">
-            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-md);">
-                <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em;">Unsere Werte</h2>
-            </div>
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <h3 class="fade-in" style="font-size: 1.5rem; font-weight: 200; letter-spacing: 0.15em; text-align: center; margin-bottom: 3rem; text-transform: uppercase;">
+                    Unsere Werte
+                </h3>
 
-            <div class="fade-in" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 8rem;">
-                <div style="text-align: center;">
-                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 1.5rem;">Qualität zuerst</h3>
-                    <p style="color: var(--color-text-light); line-height: 2; font-size: 0.9375rem;">
-                        Wir bieten nur Premium-Bikes und Ausrüstung die unseren hohen Standards entsprechen.
-                    </p>
-                </div>
-                <div style="text-align: center;">
-                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 1.5rem;">Kundenfokus</h3>
-                    <p style="color: var(--color-text-light); line-height: 2; font-size: 0.9375rem;">
-                        Deine Zufriedenheit und Sicherheit sind unsere obersten Prioritäten in allem was wir tun.
-                    </p>
-                </div>
-                <div style="text-align: center;">
-                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 1.5rem;">Zuverlässigkeit</h3>
-                    <p style="color: var(--color-text-light); line-height: 2; font-size: 0.9375rem;">
-                        Verlasse dich auf uns für konstanten Service, gewartete Ausrüstung und Experten-Beratung.
-                    </p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem 5rem; max-width: 1000px; margin: 0 auto;">
+                    <div class="fade-in">
+                        <h4 style="font-size: 1.125rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Qualität zuerst</h4>
+                        <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Wir bieten nur Premium-Bikes und Ausrüstung die unseren hohen Standards entsprechen.
+                        </p>
+                        <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-light); opacity: 0.8;">
+                            Jedes Bike wird sorgfältig ausgewählt und gewartet, damit du dich voll auf deine Tour konzentrieren kannst.
+                        </p>
+                    </div>
+
+                    <div class="fade-in">
+                        <h4 style="font-size: 1.125rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Kundenfokus</h4>
+                        <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Deine Zufriedenheit und Sicherheit sind unsere obersten Prioritäten in allem was wir tun.
+                        </p>
+                        <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-light); opacity: 0.8;">
+                            Persönliche Beratung, individuelle Lösungen und ehrliche Empfehlungen stehen bei uns an erster Stelle.
+                        </p>
+                    </div>
+
+                    <div class="fade-in">
+                        <h4 style="font-size: 1.125rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Zuverlässigkeit</h4>
+                        <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Verlasse dich auf uns für konstanten Service, gewartete Ausrüstung und Experten-Beratung.
+                        </p>
+                        <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-light); opacity: 0.8;">
+                            Was wir versprechen, halten wir. Pünktliche Termine, transparente Kommunikation und faire Preise.
+                        </p>
+                    </div>
+
+                    <div class="fade-in">
+                        <h4 style="font-size: 1.125rem; font-weight: 300; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Lokale Expertise</h4>
+                        <p style="font-size: 0.9375rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 0.75rem;">
+                            Wir kennen die Region wie unsere Westentasche und teilen unsere Lieblingsrouten gerne mit dir.
+                        </p>
+                        <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-light); opacity: 0.8;">
+                            Von versteckten Trails bis zu panoramareichen Passstraßen – wir zeigen dir die besten Strecken.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Großes Bild Sektion -->
+    <section style="position: relative; min-height: 70vh; display: flex; align-items: center; justify-content: center; background-image: url('assets/images/19.08.25-380.jpg'); background-size: cover; background-position: center; filter: grayscale(100%);">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));"></div>
+        <div class="fade-in" style="position: relative; z-index: 10; text-align: center; color: white; padding: 0 2rem; max-width: 800px;">
+            <p style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 100; line-height: 1.5; letter-spacing: 0.1em;">
+                Wir glauben an die Freiheit des Radfahrens und die Freude am Entdecken.
+            </p>
+        </div>
+    </section>
+
+    <!-- Dünne Trennlinie -->
+    <div class="container">
+        <div style="height: 1px; background: linear-gradient(90deg, transparent, var(--color-border), transparent); margin: 0 auto; max-width: 800px;"></div>
+    </div>
+
     <!-- Contact Section -->
-    <section class="section-spacing" style="background-color: var(--color-primary);">
+    <section style="padding: 4rem 0; background-color: var(--color-primary);">
         <div class="container">
-            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-md);">
-                <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em;">Kontakt</h2>
-            </div>
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <h3 class="fade-in" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; text-align: center; margin-bottom: 3rem; letter-spacing: 0.15em;">
+                    Kontakt
+                </h3>
 
-            <div class="fade-in" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 8rem;">
-                <!-- Contact Info -->
-                <div>
-                    <div style="margin-bottom: 3rem;">
-                        <div style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem;">
-                            <div style="color: var(--color-accent); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; min-width: 100px;">Adresse</div>
-                            <div style="color: var(--color-text-light); line-height: 2;">Hauptstraße 123<br>5761 Maria Alm, Österreich</div>
-                        </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 4rem 6rem; max-width: 1000px; margin: 0 auto;">
+                    <!-- Contact Info -->
+                    <div class="fade-in">
+                        <div style="margin-bottom: 2.5rem;">
+                            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                                <div>
+                                    <div style="color: var(--color-accent); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Adresse</div>
+                                    <div style="color: var(--color-text-light); line-height: 1.8;">Hauptstraße 123<br>5761 Maria Alm, Österreich</div>
+                                </div>
 
-                        <div style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem;">
-                            <div style="color: var(--color-accent); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; min-width: 100px;">Telefon</div>
-                            <div style="color: var(--color-text-light); line-height: 2;">+43 6584 123456</div>
-                        </div>
+                                <div>
+                                    <div style="color: var(--color-accent); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Telefon</div>
+                                    <div style="color: var(--color-text-light); line-height: 1.8;">+43 6584 123456</div>
+                                </div>
 
-                        <div style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem;">
-                            <div style="color: var(--color-accent); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; min-width: 100px;">Email</div>
-                            <div style="color: var(--color-text-light); line-height: 2;">info@bikepoint-mariaalm.at</div>
-                        </div>
+                                <div>
+                                    <div style="color: var(--color-accent); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Email</div>
+                                    <div style="color: var(--color-text-light); line-height: 1.8;">info@bikepoint-mariaalm.at</div>
+                                </div>
 
-                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-                            <div style="color: var(--color-accent); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; min-width: 100px;">Öffnungszeiten</div>
-                            <div style="color: var(--color-text-light); line-height: 2;">Montag - Samstag<br>9:00 - 18:00<br>Sonntag: Geschlossen</div>
+                                <div>
+                                    <div style="color: var(--color-accent); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Öffnungszeiten</div>
+                                    <div style="color: var(--color-text-light); line-height: 1.8;">Montag - Samstag<br>9:00 - 18:00<br>Sonntag: Geschlossen</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Contact Form -->
-                <div>
-                    <form class="contact-form" method="POST" action="">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="NAME" required style="width: 100%; padding: 1rem 1.5rem; border: 1px solid var(--color-border); background-color: var(--color-secondary); font-size: 0.875rem; letter-spacing: 0.1em; transition: var(--transition-fast); font-family: inherit;">
-                        </div>
+                    <!-- Contact Form -->
+                    <div class="fade-in">
+                        <form class="contact-form" method="POST" action="">
+                            <div style="margin-bottom: 1.5rem;">
+                                <input type="text" name="name" placeholder="NAME" required style="width: 100%; padding: 1rem 1.5rem; border: 1px solid var(--color-border); background-color: var(--color-secondary); font-size: 0.875rem; letter-spacing: 0.1em; transition: var(--transition-fast); font-family: inherit; color: var(--color-text);">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="EMAIL" required style="width: 100%; padding: 1rem 1.5rem; border: 1px solid var(--color-border); background-color: var(--color-secondary); font-size: 0.875rem; letter-spacing: 0.1em; transition: var(--transition-fast); font-family: inherit;">
-                        </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <input type="email" name="email" placeholder="EMAIL" required style="width: 100%; padding: 1rem 1.5rem; border: 1px solid var(--color-border); background-color: var(--color-secondary); font-size: 0.875rem; letter-spacing: 0.1em; transition: var(--transition-fast); font-family: inherit; color: var(--color-text);">
+                            </div>
 
-                        <div class="form-group">
-                            <textarea name="message" placeholder="NACHRICHT" rows="6" required style="width: 100%; padding: 1rem 1.5rem; border: 1px solid var(--color-border); background-color: var(--color-secondary); font-size: 0.875rem; letter-spacing: 0.1em; transition: var(--transition-fast); font-family: inherit; resize: none; min-height: 200px;"></textarea>
-                        </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <textarea name="message" placeholder="NACHRICHT" rows="6" required style="width: 100%; padding: 1rem 1.5rem; border: 1px solid var(--color-border); background-color: var(--color-secondary); font-size: 0.875rem; letter-spacing: 0.1em; transition: var(--transition-fast); font-family: inherit; resize: none; min-height: 200px; color: var(--color-text);"></textarea>
+                            </div>
 
-                        <button type="submit" class="btn btn-secondary" style="width: 100%;">
-                            NACHRICHT SENDEN
-                        </button>
-                    </form>
+                            <button type="submit" class="btn btn-secondary" style="width: 100%;">
+                                NACHRICHT SENDEN
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 4rem 0; text-align: center; background-color: #0A0A0A;">
+        <div class="container fade-in">
+            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 1.5rem; color: white;">
+                Besuche uns in Maria Alm
+            </h2>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 2.5rem; letter-spacing: 0.1em;">
+                Wir freuen uns auf deinen Besuch im Shop oder deine Nachricht
+            </p>
         </div>
     </section>
 </main>
