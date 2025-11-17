@@ -91,6 +91,11 @@ button {
     padding: 10rem 0;
 }
 
+.content-box {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 /* ==========================================
    NAVIGATION
    ========================================== */
@@ -151,14 +156,38 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.2em;
     transition: var(--transition-fast);
 }
 
+.logo-img {
+    height: 45px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: var(--transition-fast);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-wrapper .logo-img {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-wrapper.scrolled .logo-img {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
 .logo:hover {
     opacity: 0.7;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
 }
 
 .nav-menu {
@@ -453,6 +482,32 @@ section:nth-child(even) {
 .service-card p {
     color: var(--color-text-light);
     line-height: 1.8;
+}
+
+.service-list {
+    list-style: none;
+    text-align: left;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.service-list li {
+    padding: 0.5rem 0;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(139, 157, 147, 0.1);
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-accent);
+    margin: 1.5rem 0;
+    letter-spacing: 0.05em;
 }
 
 /* ==========================================

@@ -187,7 +187,7 @@ include 'includes/header.php';
     </section>
 
     <!-- Service Section -->
-    <section class="section-spacing" style="background-color: var(--color-primary); border-top: 1px solid var(--color-border);">
+    <section id="service" class="section-spacing" style="background-color: var(--color-primary); border-top: 1px solid var(--color-border);">
         <div class="container">
             <div class="fade-in" style="text-align: center; margin-bottom: 5rem;">
                 <h2 class="section-title">Service & Wartung</h2>
