@@ -1,6 +1,7 @@
-<?php 
+<?php
 $page_title = 'Home';
-include 'includes/header.php'; 
+$has_hero = true; // Kennzeichnet Seiten mit Hero-Bild
+include 'includes/header.php';
 ?>
 
 <!-- Hero Section -->

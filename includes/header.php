@@ -15,18 +15,18 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/logo.jpg">
 </head>
-<body>
+<body<?php echo !isset($has_hero) || !$has_hero ? ' class="no-hero"' : ''; ?>>
 
     <!-- Navigation -->
-    <div class="nav-wrapper">
+    <div class="nav-wrapper<?php echo !isset($has_hero) || !$has_hero ? ' scrolled' : ''; ?>">
         <div class="container">
             <nav>
                 <a href="index.php" class="logo">BIKEPOINT</a>
                 
                 <ul class="nav-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="rental.php">Verleih & Service</a></li>
-                    <li><a href="about.php">Über uns & Kontakt</a></li>
+                    <li><a href="index.php"<?php echo ($page_title == 'Home') ? ' class="active"' : ''; ?>>Home</a></li>
+                    <li><a href="rental.php"<?php echo ($page_title == 'Verleih & Service') ? ' class="active"' : ''; ?>>Verleih & Service</a></li>
+                    <li><a href="about.php"<?php echo ($page_title == 'Über uns & Kontakt') ? ' class="active"' : ''; ?>>Über uns & Kontakt</a></li>
                 </ul>
                 
                 <div class="mobile-menu-toggle">
