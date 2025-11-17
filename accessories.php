@@ -264,6 +264,26 @@ include 'includes/header.php';
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section style="padding: 4rem 0; text-align: center; background-color: #0A0A0A; position: relative; overflow: hidden;">
+        <!-- Background Image -->
+        <div style="position: absolute; inset: 0; background-image: url('assets/images/auto.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); opacity: 0.25;"></div>
+
+        <!-- Overlay -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.85));"></div>
+
+        <!-- Content -->
+        <div class="container fade-in" style="position: relative; z-index: 1;">
+            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 1.5rem; color: white;">
+                Bereit für dein nächstes Abenteuer?
+            </h2>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 2.5rem; letter-spacing: 0.1em;">
+                Besuche uns im Shop für persönliche Beratung und finde das perfekte Equipment
+            </p>
+            <a href="about.php" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+        </div>
+    </section>
+
 </main>
 
 <?php include 'includes/footer.php'; ?>
