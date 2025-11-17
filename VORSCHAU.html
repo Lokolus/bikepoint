@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikepoint - Projekt-Übersicht</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #F5F5F5;
+            padding: 3rem 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+            color: #1A1A1A;
+        }
+        
+        .subtitle {
+            color: #C4A07A;
+            font-size: 1.125rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 300;
+            margin: 3rem 0 1.5rem;
+            color: #1A1A1A;
+            border-bottom: 1px solid #E8E8E8;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin: 2rem 0 1rem;
+            color: #C4A07A;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .color-box {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .color-sample {
+            height: 80px;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+            border: 1px solid #E8E8E8;
+        }
+        
+        .color-name {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .color-code {
+            font-size: 0.75rem;
+            color: #6B6B6B;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .page-grid {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .page-card {
+            border: 1px solid #E8E8E8;
+            padding: 2rem;
+            border-radius: 4px;
+            background: #FAFAFA;
+        }
+        
+        .page-title {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #1A1A1A;
+        }
+        
+        .page-sections {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .page-sections li {
+            padding: 0.5rem 0;
+            color: #6B6B6B;
+            border-bottom: 1px solid #E8E8E8;
+        }
+        
+        .page-sections li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-list li {
+            padding: 1rem 1rem 1rem 2.5rem;
+            background: #FAFAFA;
+            border-radius: 4px;
+            position: relative;
+        }
+        
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 1rem;
+            color: #C4A07A;
+            font-weight: bold;
+        }
+        
+        .file-tree {
+            background: #1A1A1A;
+            color: #F5F5F5;
+            padding: 2rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            line-height: 1.8;
+            overflow-x: auto;
+        }
+        
+        .file-tree .folder {
+            color: #C4A07A;
+        }
+        
+        .file-tree .file {
+            color: #88C0D0;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 2rem;
+            background: #FAFAFA;
+            border-radius: 4px;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #C4A07A;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: #6B6B6B;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .code-block {
+            background: #1A1A1A;
+            color: #F5F5F5;
+            padding: 1.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        
+        .button-demo {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: #C4A07A;
+            color: white;
+            text-decoration: none;
+            font-size: 0.875rem;
+            letter-spacing: 0.2em;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        
+        .button-demo:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(196, 160, 122, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BIKEPOINT</h1>
+        <p class="subtitle">Minimalistische Website - Projekt-Übersicht</p>
+        
+        <p>Diese Dokumentation bietet einen vollständigen Überblick über das Bikepoint-Website-Projekt. Das Design folgt einem minimalistischen Ansatz mit White Mode, Schwarz/Weiß-Bildsprache und warmer Beige-Akzentfarbe.</p>
+        
+        <h2>🎨 Farbpalette</h2>
+        <div class="color-grid">
+            <div class="color-box">
+                <div class="color-sample" style="background: #F5F5F5;"></div>
+                <div class="color-name">Primary</div>
+                <div class="color-code">#F5F5F5</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background: #FFFFFF; border: 2px solid #E8E8E8;"></div>
+                <div class="color-name">Secondary</div>
+                <div class="color-code">#FFFFFF</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background: #C4A07A;"></div>
+                <div class="color-name">Accent</div>
+                <div class="color-code">#C4A07A</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background: #1A1A1A;"></div>
+                <div class="color-name">Text</div>
+                <div class="color-code">#1A1A1A</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background: #6B6B6B;"></div>
+                <div class="color-name">Text Light</div>
+                <div class="color-code">#6B6B6B</div>
+            </div>
+            <div class="color-box">
+                <div class="color-sample" style="background: #E8E8E8;"></div>
+                <div class="color-name">Border</div>
+                <div class="color-code">#E8E8E8</div>
+            </div>
+        </div>
+        
+        <h2>📊 Projekt-Statistiken</h2>
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Seiten</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Dateien</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">23KB</div>
+                <div class="stat-label">Gesamt-Größe</div>
+            </div>
+        </div>
+        
+        <h2>📄 Seiten-Struktur</h2>
+        
+        <div class="page-grid">
+            <div class="page-card">
+                <div class="page-title">1. Home (index.php)</div>
+                <ul class="page-sections">
+                    <li>Hero Section - Full Screen mit Claim</li>
+                    <li>Services Grid - 3 Cards (Rental, Shop, Service)</li>
+                    <li>About Preview - Geschichte + 3 Statistiken</li>
+                    <li>CTA Section - "Ready for your next adventure?"</li>
+                </ul>
+            </div>
+            
+            <div class="page-card">
+                <div class="page-title">2. Rental & Service (rental.php)</div>
+                <ul class="page-sections">
+                    <li>Page Header mit Einleitung</li>
+                    <li>Mountain Bikes - 3 Modelle (€45-€55/Tag)</li>
+                    <li>E-Bikes - 3 Modelle (€40-€60/Tag)</li>
+                    <li>Kids Bikes - 3 Modelle (€20-€30/Tag)</li>
+                    <li>Service Packages - Basic (€45) & Full (€95)</li>
+                </ul>
+            </div>
+            
+            <div class="page-card">
+                <div class="page-title">3. About & Contact (about.php)</div>
+                <ul class="page-sections">
+                    <li>About Section - Geschichte seit 2015</li>
+                    <li>Statistiken - 2000+ Riders, 50+ Bikes, 9 Jahre</li>
+                    <li>Team Grid - 3 Mitglieder mit Portraits</li>
+                    <li>Values Section - 3 Werte-Cards</li>
+                    <li>Contact Form - Formular + Kontakt-Details</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>✨ Design-Features</h2>
+        <ul class="feature-list">
+            <li>Minimalistisches White Mode Design</li>
+            <li>Schwarz/Weiß Bildsprache</li>
+            <li>Warme Beige-Akzentfarbe (#C4A07A)</li>
+            <li>Sehr viel Weißraum</li>
+            <li>Sanfte Fade-in Animationen</li>
+            <li>Smooth Hover-Effekte</li>
+            <li>Mobile-first Responsive</li>
+            <li>Fixed Navigation mit Blur-Effekt</li>
+            <li>Intersection Observer Animationen</li>
+            <li>Counter Animation für Stats</li>
+            <li>Form Validation</li>
+            <li>Lazy Loading vorbereitet</li>
+        </ul>
+        
+        <h2>📁 Dateistruktur</h2>
+        <div class="file-tree">bikepoint/
+│
+├── <span class="file">index.php</span>                 (Home Page)
+├── <span class="file">rental.php</span>                (Rental & Service)
+├── <span class="file">about.php</span>                 (About & Contact)
+├── <span class="file">README.md</span>                 (Dokumentation)
+│
+├── <span class="folder">assets/</span>
+│   ├── <span class="folder">css/</span>
+│   │   └── <span class="file">style.css</span>         (Haupt-Stylesheet)
+│   ├── <span class="folder">js/</span>
+│   │   └── <span class="file">main.js</span>           (JavaScript)
+│   └── <span class="folder">images/</span>             (Für S/W Bilder)
+│
+└── <span class="folder">includes/</span>
+    ├── <span class="file">header.php</span>            (Navigation)
+    └── <span class="file">footer.php</span>            (Footer)</div>
+        
+        <h2>⚙️ JavaScript-Funktionen</h2>
+        
+        <h3>Implementierte Features:</h3>
+        <ul class="feature-list">
+            <li>Navigation Scroll-Effekt</li>
+            <li>Mobile Menu Toggle</li>
+            <li>Smooth Scroll zu Sektionen</li>
+            <li>Fade-in Animationen (Intersection Observer)</li>
+            <li>Parallax Effect (Hero)</li>
+            <li>Counter Animation</li>
+            <li>Form Validation</li>
+            <li>Hover Effects</li>
+        </ul>
+        
+        <h2>🚀 Installation</h2>
+        
+        <h3>Schritt 1: Projekt entpacken</h3>
+        <div class="code-block"># Entpacke die Dateien in dein Webserver-Verzeichnis
+# Beispiel: /var/www/html/bikepoint oder htdocs/bikepoint</div>
+        
+        <h3>Schritt 2: Webserver starten</h3>
+        <div class="code-block"># Apache oder Nginx mit PHP 7.4+ erforderlich
+# Keine Datenbank benötigt</div>
+        
+        <h3>Schritt 3: Im Browser öffnen</h3>
+        <div class="code-block">http://localhost/bikepoint</div>
+        
+        <h2>🎯 Anpassungen</h2>
+        
+        <h3>Farben ändern</h3>
+        <p>Bearbeite die CSS-Variablen in <code>assets/css/style.css</code>:</p>
+        <div class="code-block">:root {
+    --color-primary: #F5F5F5;
+    --color-secondary: #FFFFFF;
+    --color-accent: #C4A07A;    /* Deine neue Akzentfarbe */
+    --color-text: #1A1A1A;
+    --color-text-light: #6B6B6B;
+    --color-border: #E8E8E8;
+}</div>
+        
+        <h3>Bilder hinzufügen</h3>
+        <ul style="margin: 1rem 0; padding-left: 2rem;">
+            <li>Füge Schwarz/Weiß Fotos in <code>assets/images/</code> ein</li>
+            <li>Ersetze die <code>.bike-image</code> und <code>.team-photo</code> Hintergründe</li>
+            <li>Optional: Nutze <code>&lt;img&gt;</code> Tags mit <code>data-src</code> für Lazy Loading</li>
+        </ul>
+        
+        <h3>Inhalte ändern</h3>
+        <ul style="margin: 1rem 0; padding-left: 2rem;">
+            <li>Texte direkt in den PHP-Dateien bearbeiten</li>
+            <li>Preise in <code>rental.php</code> anpassen</li>
+            <li>Team-Namen in <code>about.php</code> ändern</li>
+        </ul>
+        
+        <h2>📱 Responsive Design</h2>
+        <div class="code-block">Desktop:  > 768px   (Standard Layout)
+Tablet:   ≤ 768px   (Mobile Navigation aktiviert)
+Mobile:   ≤ 480px   (Kompakte Layouts)</div>
+        
+        <h2>🌐 Browser-Kompatibilität</h2>
+        <ul class="feature-list">
+            <li>Chrome 90+</li>
+            <li>Firefox 88+</li>
+            <li>Safari 14+</li>
+            <li>Edge 90+</li>
+        </ul>
+        
+        <h2>🎨 Design-Richtlinien</h2>
+        
+        <h3>Typografie</h3>
+        <ul style="margin: 1rem 0; padding-left: 2rem;">
+            <li><strong>Font-weight:</strong> 300 (Light) für alle Texte</li>
+            <li><strong>Letter-spacing:</strong> 0.1em - 0.2em (weit und luftig)</li>
+            <li><strong>Line-height:</strong> 1.6 - 1.8 (großzügig)</li>
+            <li><strong>Font-family:</strong> System Sans-Serif</li>
+        </ul>
+        
+        <h3>Spacing</h3>
+        <ul style="margin: 1rem 0; padding-left: 2rem;">
+            <li><strong>Section-padding:</strong> 8rem (Desktop), 4rem (Mobile)</li>
+            <li><strong>Card-gap:</strong> 2rem - 4rem</li>
+            <li><strong>Container-padding:</strong> 3rem (Desktop), 1.5rem (Mobile)</li>
+        </ul>
+        
+        <h3>Animationen</h3>
+        <ul style="margin: 1rem 0; padding-left: 2rem;">
+            <li><strong>Duration:</strong> 0.3s (Fast), 0.5s (Smooth)</li>
+            <li><strong>Easing:</strong> cubic-bezier(0.4, 0, 0.2, 1)</li>
+            <li><strong>Hover:</strong> translateY(-10px) + shadow</li>
+        </ul>
+        
+        <h2>🔧 Performance-Optimierungen</h2>
+        
+        <h3>Bereits implementiert:</h3>
+        <ul class="feature-list">
+            <li>Minimale CSS (keine Bibliotheken)</li>
+            <li>Vanilla JavaScript (kein jQuery)</li>
+            <li>Inline SVG Icons</li>
+            <li>Intersection Observer (effizient)</li>
+            <li>Lazy Loading vorbereitet</li>
+        </ul>
+        
+        <h3>Empfohlene Erweiterungen:</h3>
+        <ul class="feature-list">
+            <li>CSS/JS Minification</li>
+            <li>Bilder zu WebP konvertieren</li>
+            <li>Browser Caching aktivieren</li>
+            <li>CDN für Assets</li>
+        </ul>
+        
+        <h2>📞 Support & Kontakt</h2>
+        <p style="margin: 2rem 0;">
+            <strong>E-Mail:</strong> info@bikepoint.at<br>
+            <strong>Telefon:</strong> +43 662 123456<br>
+            <strong>Adresse:</strong> Hauptstraße 123, 5020 Salzburg
+        </p>
+        
+        <div style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #E8E8E8;">
+            <a href="index.php" class="button-demo">WEBSITE ÖFFNEN</a>
+            <p style="margin-top: 2rem; color: #6B6B6B; font-size: 0.875rem;">
+                Version 1.0.0 | November 2024<br>
+                Entwickelt mit ❤️ für minimalistisches Design
+            </p>
+        </div>
+    </div>
+</body>
+</html>

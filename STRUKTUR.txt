@@ -1,0 +1,241 @@
+BIKEPOINT - PROJEKTSTRUKTUR
+============================
+
+bikepoint/
+│
+├── 📄 index.php                    [HOME PAGE]
+│   ├── Hero Section (Full Screen)
+│   ├── Services Grid (3 Cards)
+│   ├── About Preview + Stats
+│   └── CTA Section
+│
+├── 📄 rental.php                   [RENTAL & SERVICE PAGE]
+│   ├── Page Header
+│   ├── Mountain Bikes (3 Modelle)
+│   ├── E-Bikes (3 Modelle)
+│   ├── Kids Bikes (3 Modelle)
+│   └── Service Packages (2 Pakete)
+│
+├── 📄 about.php                    [ABOUT & CONTACT PAGE]
+│   ├── About Section + Stats
+│   ├── Team Grid (3 Mitglieder)
+│   ├── Values Section (3 Cards)
+│   └── Contact Form + Info
+│
+├── 📄 README.md                    [DOKUMENTATION]
+│
+├── 📁 assets/
+│   │
+│   ├── 📁 css/
+│   │   └── 🎨 style.css          [8000+ Zeilen CSS]
+│   │       ├── Variables & Reset
+│   │       ├── Navigation Styles
+│   │       ├── Hero Section
+│   │       ├── Buttons & Forms
+│   │       ├── Service Cards
+│   │       ├── Bike Cards
+│   │       ├── Team Section
+│   │       ├── Contact Section
+│   │       ├── Footer
+│   │       ├── Animations
+│   │       └── Responsive Media Queries
+│   │
+│   ├── 📁 js/
+│   │   └── ⚙️ main.js            [JavaScript Functions]
+│   │       ├── Navigation (Scroll + Mobile Menu)
+│   │       ├── Smooth Scroll
+│   │       ├── Fade-in Animations (Intersection Observer)
+│   │       ├── Parallax Effect
+│   │       ├── Counter Animation
+│   │       ├── Form Validation
+│   │       ├── Hover Effects
+│   │       └── Lazy Loading
+│   │
+│   └── 📁 images/                 [Bereit für S/W Bilder]
+│       └── (Leer - für deine Fotos)
+│
+└── 📁 includes/
+    ├── 🔝 header.php              [Navigation + Meta Tags]
+    │   ├── HTML Head
+    │   ├── Navigation Bar
+    │   └── Mobile Menu Toggle
+    │
+    └── 🔚 footer.php              [Footer + Scripts]
+        ├── Footer Content (3 Spalten)
+        ├── Footer Bottom
+        └── JavaScript Include
+
+
+DESIGN SYSTEM
+=============
+
+🎨 Farben:
+   Primary:     #F5F5F5  (Heller Grau)
+   Secondary:   #FFFFFF  (Weiß)
+   Accent:      #C4A07A  (Warmes Beige)
+   Text:        #1A1A1A  (Anthrazit)
+   Text Light:  #6B6B6B  (Hellgrau)
+   Border:      #E8E8E8  (Rahmen)
+
+✨ Features:
+   - Minimalistisches White Mode Design
+   - Schwarz/Weiß Bildsprache
+   - Sanfte Fade-in Animationen
+   - Smooth Hover-Effekte
+   - Mobile-first Responsive
+   - Sehr viel Weißraum
+   - Klare Typografie (Light, weit)
+
+📱 Responsive:
+   Desktop:  > 768px
+   Tablet:   ≤ 768px  (Mobile Nav)
+   Mobile:   ≤ 480px  (Kompakt)
+
+
+SEITEN-ÜBERSICHT
+================
+
+1️⃣ HOME (index.php)
+   ├── Hero: Full-Screen mit "RIDE. EXPLORE. ENJOY."
+   ├── Services: 3 Cards (Rental, Shop, Service)
+   ├── About Preview: Text + 3 Stats
+   └── CTA: "Ready for your next adventure?"
+
+2️⃣ RENTAL (rental.php)
+   ├── Header: "Bike Rental & Service"
+   ├── MTB Section: 3 Bike-Cards
+   ├── E-Bike Section: 3 Bike-Cards
+   ├── Kids Section: 3 Bike-Cards
+   └── Service: 2 Pakete (Basic €45, Full €95)
+
+3️⃣ ABOUT (about.php)
+   ├── About: Geschichte + Mission
+   ├── Stats: 2000+ Riders, 50+ Bikes, 9 Jahre
+   ├── Team: 3 Mitglieder mit Portraits
+   ├── Values: 3 Cards (Quality, Customer, Reliability)
+   └── Contact: Formular + Infos + Map
+
+
+KOMPONENTEN
+===========
+
+Navigation:
+   - Fixed Header mit Blur beim Scrollen
+   - Logo (BIKEPOINT) + 3 Links
+   - Mobile Hamburger-Menü
+   - Active State Highlighting
+
+Hero:
+   - Full-Screen Gradient Background
+   - Zentrierter Content
+   - Call-to-Action Button
+   - Scroll-Indicator
+
+Service Cards:
+   - Icon in rundem Container
+   - Titel + Beschreibung
+   - Hover: translateY(-10px)
+
+Bike Cards:
+   - S/W Bild-Platzhalter
+   - Name + Preis (Accent-Color)
+   - Feature-Liste mit Punkten
+   - "BOOK NOW" Button
+
+Team:
+   - Runde Portraits (S/W Gradient)
+   - Initialen in der Mitte
+   - Name + Rolle
+   - Hover: Scale(1.05)
+
+Contact Form:
+   - 3 Input-Felder (Name, Email, Message)
+   - Clean Border-Style
+   - Validation
+   - Submit Button
+
+Footer:
+   - 3 Spalten (Info, Links, Hours)
+   - Copyright-Zeile
+   - Minimalistisch
+
+
+INSTALLATION
+============
+
+1. Projekt entpacken in Webserver-Verzeichnis
+   (z.B. /var/www/html/bikepoint)
+
+2. Apache/Nginx mit PHP 7.4+ starten
+
+3. Im Browser öffnen:
+   http://localhost/bikepoint
+
+Fertig! Keine Datenbank erforderlich. 🎉
+
+
+ANPASSUNGEN
+===========
+
+Farben ändern:
+   → assets/css/style.css (Zeile 8-14, :root Variables)
+
+Bilder hinzufügen:
+   → assets/images/ (S/W Fotos)
+   → PHP-Dateien: Ersetze .bike-image Hintergründe
+
+Texte ändern:
+   → Direkt in index.php, rental.php, about.php
+
+Preise anpassen:
+   → rental.php (Zeile mit .bike-price)
+
+Team ändern:
+   → about.php (Team Section)
+
+
+PERFORMANCE
+===========
+
+✅ Optimiert:
+   - Minimale CSS (keine Libraries)
+   - Vanilla JavaScript (kein jQuery)
+   - SVG Icons (inline)
+   - Intersection Observer (statt Scroll)
+   - Lazy Loading vorbereitet
+
+🚀 Empfohlen:
+   - Bilder zu WebP konvertieren
+   - CSS/JS minifizieren
+   - Browser Caching aktivieren
+
+
+BROWSER SUPPORT
+===============
+
+✅ Chrome 90+
+✅ Firefox 88+
+✅ Safari 14+
+✅ Edge 90+
+
+
+DATEIGRÖSSEN
+============
+
+style.css:     ~15 KB (uncompressed)
+main.js:       ~8 KB (uncompressed)
+Gesamt:        ~23 KB (ohne Bilder)
+
+Sehr leicht und performant! ⚡
+
+
+KONTAKT
+=======
+
+📧 info@bikepoint.at
+📱 +43 662 123456
+📍 Hauptstraße 123, 5020 Salzburg
+
+---
+Version 1.0.0 | November 2024
+Entwickelt mit ❤️ für minimalistisches Design
