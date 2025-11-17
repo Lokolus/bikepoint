@@ -116,13 +116,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     // PARALLAX EFFECT (Hero Section)
     // ==========================================
-    
-    const hero = document.querySelector('.hero');
-    if (hero) {
+
+    const heroBg = document.querySelector('.hero-bg');
+    if (heroBg) {
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
-            const parallaxSpeed = 0.5;
-            hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+            const parallaxSpeed = 0.3; // Subtle parallax for smooth effect
+            heroBg.style.transform = `translateY(${scrolled * parallaxSpeed}px) scale(1.05)`;
         });
     }
     

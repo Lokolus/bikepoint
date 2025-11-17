@@ -6,13 +6,15 @@
 :root {
     --color-primary: #F5F5F5;
     --color-secondary: #FFFFFF;
-    --color-accent: #C4A07A;
+    --color-accent: #0D9488;          /* Sophisticated Teal - perfect with B/W */
+    --color-accent-hover: #14B8A6;    /* Lighter teal for hover states */
     --color-text: #1A1A1A;
     --color-text-light: #6B6B6B;
     --color-border: #E8E8E8;
-    
+
     --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.3s ease;
+    --transition-elegant: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* ==========================================
@@ -69,12 +71,20 @@ button {
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Smooth scroll behavior enhancement */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
 }
 
 .section-spacing {
@@ -178,19 +188,44 @@ nav {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #2C3E50 0%, #4A5568 100%);
+    background-color: #1A1A1A;
 }
 
+/* Hero Background Image - Bild 3 */
 .hero-bg {
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10rem;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.05);
-    letter-spacing: 0.2em;
+    background-image: url('../images/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Subtle overlay for better text readability */
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(13, 148, 136, 0.15) 50%,
+            rgba(0, 0, 0, 0.6) 100%
+        );
+        backdrop-filter: blur(0px);
+        transition: var(--transition-elegant);
+    }
+
+    /* Smooth zoom effect on load */
+    animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
 
 .hero-content {
@@ -199,6 +234,7 @@ nav {
     text-align: center;
     color: white;
     animation: fadeInUp 1.5s ease;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
@@ -206,13 +242,27 @@ nav {
     font-weight: 300;
     letter-spacing: 0.2em;
     margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Subtle accent underline effect */
+.hero h1::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    opacity: 0.8;
 }
 
 .hero p {
     font-size: clamp(1.25rem, 2vw, 1.5rem);
     letter-spacing: 0.3em;
     margin-bottom: 3rem;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .hero-scroll {
@@ -221,11 +271,19 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     animation: bounce 2s infinite;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.hero-scroll:hover {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.1);
 }
 
 .hero-scroll svg {
     color: white;
     opacity: 0.7;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 /* ==========================================
@@ -246,20 +304,22 @@ nav {
 .btn-primary {
     background-color: var(--color-accent);
     color: var(--color-secondary);
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.2);
 }
 
 .btn-primary:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(196, 160, 122, 0.3);
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(13, 148, 136, 0.35);
 }
 
 .btn-primary::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
     transform: translateX(-100%);
-    transition: var(--transition-smooth);
+    transition: var(--transition-elegant);
 }
 
 .btn-primary:hover::before {
@@ -267,12 +327,15 @@ nav {
 }
 
 .btn-secondary {
-    background-color: rgba(196, 160, 122, 0.1);
+    background-color: rgba(13, 148, 136, 0.08);
     color: var(--color-accent);
+    border: 1px solid var(--color-accent);
 }
 
 .btn-secondary:hover {
-    background-color: rgba(196, 160, 122, 0.2);
+    background-color: rgba(13, 148, 136, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.15);
 }
 
 /* ==========================================
@@ -321,14 +384,16 @@ section:nth-child(even) {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(196, 160, 122, 0.1);
+    background-color: rgba(13, 148, 136, 0.06);
     border-radius: 50%;
-    transition: var(--transition-smooth);
+    transition: var(--transition-elegant);
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.08);
 }
 
 .service-card:hover .service-icon {
-    transform: scale(1.1);
-    background-color: rgba(196, 160, 122, 0.2);
+    transform: scale(1.1) rotate(5deg);
+    background-color: rgba(13, 148, 136, 0.12);
+    box-shadow: 0 8px 25px rgba(13, 148, 136, 0.15);
 }
 
 .service-icon svg {
