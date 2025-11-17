@@ -5,7 +5,7 @@ include 'includes/header.php';
 
 <!-- Hero Section -->
 <section class="hero">
-    <div class="hero-bg">BIKE</div>
+    <div class="hero-bg"></div>
     <div class="hero-content">
         <h1>BIKEPOINT</h1>
         <p>RIDE. EXPLORE. ENJOY.</p>
