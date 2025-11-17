@@ -4,330 +4,153 @@ $has_hero = true;
 include 'includes/header.php';
 ?>
 
-<!-- Page-specific CSS -->
-<link rel="stylesheet" href="assets/css/verkauf.css">
-
-<!-- Hero Section -->
-<section class="hero" style="background-image: url('assets/images/19.08.25-229.jpg');">
+<!-- Hero Section - Fullscreen Schwarz-Weiß wie Homepage -->
+<section class="hero">
+    <div class="hero-bg" style="background-image: url('assets/images/19.08.25-229.jpg');"></div>
     <div class="hero-content">
-        <h1 class="hero-title">Premium Bikes kaufen</h1>
-        <p class="hero-subtitle">Hochwertige Mountainbikes, E-Bikes und Rennräder für jeden Anspruch</p>
+        <h1>Premium Bikes<br>kaufen</h1>
+        <p>Hochwertige Bikes für jeden Anspruch</p>
+    </div>
+    <div class="hero-scroll">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
     </div>
 </section>
 
 <!-- Main Content -->
 <main>
-    <!-- Introduction Section -->
-    <section class="section">
+    <!-- Introduction Section - Premium Text, max 60% Breite -->
+    <section class="section-spacing">
         <div class="container">
-            <div class="content-box fade-in">
-                <h2 style="text-align: center; margin-bottom: 2rem;">Dein Traumbike wartet auf dich</h2>
-                <p>Bei Bikepoint findest du eine sorgfältig ausgewählte Auswahl an Premium-Bikes führender Marken. Ob Mountainbike, E-Bike, Rennrad oder Gravelbike – wir bieten dir hochwertige Räder für jeden Einsatzbereich und jedes Budget.</p>
-                <p>Unsere Experten beraten dich umfassend und helfen dir, das perfekte Bike für deine Bedürfnisse zu finden. Vor dem Kauf kannst du die Bikes bei einer ausgiebigen Testfahrt in den Alpen kennenlernen.</p>
+            <div class="content-box fade-in" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.125rem; line-height: 2; color: var(--color-text-light); margin-bottom: 3rem;">
+                    Bei Bikepoint findest du eine sorgfältig ausgewählte Auswahl an Premium-Bikes führender Marken.
+                    Ob Mountainbike, E-Bike, Rennrad oder Gravelbike – wir bieten dir hochwertige Räder für jeden Einsatzbereich.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Bike Categories Section -->
-    <section class="section section-with-pattern" style="background-color: var(--color-primary);">
+    <!-- Bike Categories Section - Offenes Layout ohne Boxen -->
+    <section class="section-spacing" style="background-color: var(--color-primary);">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Unsere Bike-Kategorien</h2>
-            <div class="bike-categories-grid">
-                <!-- Mountainbikes -->
-                <div class="category-card">
-                    <div class="category-image-placeholder">Mountainbike</div>
-                    <div class="category-content">
-                        <h3>Mountainbikes</h3>
-                        <p>Für Trail, Enduro und Cross Country</p>
-                        <ul class="category-features">
-                            <li>All-Mountain & Trail (120-150mm)</li>
-                            <li>Enduro (150-180mm)</li>
-                            <li>Cross Country (100-120mm)</li>
-                            <li>Downhill (180mm+)</li>
-                        </ul>
-                        <div class="brands-text"><strong>Marken:</strong> Specialized, Trek, Canyon, Santa Cruz, Cube</div>
-                    </div>
-                </div>
+            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-md);">
+                <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 1.5rem;">Bike-Kategorien</h2>
+            </div>
 
-                <!-- E-Mountainbikes -->
-                <div class="category-card">
-                    <div class="category-image-placeholder">E-Mountainbike</div>
-                    <div class="category-content">
-                        <h3>E-Mountainbikes</h3>
-                        <p>Mehr Power für längere Touren</p>
-                        <ul class="category-features">
-                            <li>E-All-Mountain</li>
-                            <li>E-Enduro</li>
-                            <li>E-Trekking</li>
-                            <li>Top-Motoren: Bosch, Shimano, Fazua</li>
-                        </ul>
-                        <div class="brands-text"><strong>Marken:</strong> Specialized, Haibike, Focus, Bulls, Cube</div>
-                    </div>
+            <!-- Mountainbikes -->
+            <div class="fade-in" style="margin-bottom: 12rem;">
+                <h3 style="font-size: 1.75rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 3rem; text-align: center;">Mountainbikes</h3>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 2.5rem;">
+                        Für Trail, Enduro und Cross Country
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">All-Mountain & Trail (120-150mm)</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">Enduro (150-180mm)</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">Cross Country (100-120mm)</li>
+                        <li style="padding: 0.75rem 0; color: var(--color-text-light); font-size: 0.9375rem;">Downhill (180mm+)</li>
+                    </ul>
+                    <p style="font-size: 0.875rem; color: var(--color-text-anthracite); letter-spacing: 0.05em;">Specialized · Trek · Canyon · Santa Cruz · Cube</p>
                 </div>
+            </div>
 
-                <!-- Rennräder -->
-                <div class="category-card">
-                    <div class="category-image-placeholder">Rennrad</div>
-                    <div class="category-content">
-                        <h3>Rennräder</h3>
-                        <p>Für Straße und Wettkampf</p>
-                        <ul class="category-features">
-                            <li>Race-Rennräder (Carbon)</li>
-                            <li>Endurance-Modelle</li>
-                            <li>Aero-Rennräder</li>
-                            <li>Shimano, SRAM, Campagnolo</li>
-                        </ul>
-                        <div class="brands-text"><strong>Marken:</strong> Specialized, Trek, Canyon, Bianchi, Cervelo</div>
-                    </div>
+            <!-- E-Mountainbikes -->
+            <div class="fade-in" style="margin-bottom: 12rem;">
+                <h3 style="font-size: 1.75rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 3rem; text-align: center;">E-Mountainbikes</h3>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 2.5rem;">
+                        Mehr Power für längere Touren
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">E-All-Mountain</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">E-Enduro</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">E-Trekking</li>
+                        <li style="padding: 0.75rem 0; color: var(--color-text-light); font-size: 0.9375rem;">Top-Motoren: Bosch, Shimano, Fazua</li>
+                    </ul>
+                    <p style="font-size: 0.875rem; color: var(--color-text-anthracite); letter-spacing: 0.05em;">Specialized · Haibike · Focus · Bulls · Cube</p>
                 </div>
+            </div>
 
-                <!-- Gravelbikes -->
-                <div class="category-card">
-                    <div class="category-image-placeholder">Gravelbike</div>
-                    <div class="category-content">
-                        <h3>Gravelbikes</h3>
-                        <p>Vielseitig für Straße und Schotter</p>
-                        <ul class="category-features">
-                            <li>All-Road Bikes</li>
-                            <li>Adventure-Modelle</li>
-                            <li>Bikepacking-tauglich</li>
-                            <li>Disc-Bremsen Standard</li>
-                        </ul>
-                        <div class="brands-text"><strong>Marken:</strong> Specialized, Trek, Canyon, Giant, Cannondale</div>
-                    </div>
+            <!-- Rennräder -->
+            <div class="fade-in" style="margin-bottom: 12rem;">
+                <h3 style="font-size: 1.75rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 3rem; text-align: center;">Rennräder</h3>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 2.5rem;">
+                        Für Straße und Wettkampf
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">Race-Rennräder (Carbon)</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">Endurance-Modelle</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">Aero-Rennräder</li>
+                        <li style="padding: 0.75rem 0; color: var(--color-text-light); font-size: 0.9375rem;">Shimano, SRAM, Campagnolo</li>
+                    </ul>
+                    <p style="font-size: 0.875rem; color: var(--color-text-anthracite); letter-spacing: 0.05em;">Specialized · Trek · Canyon · Bianchi · Cervelo</p>
                 </div>
+            </div>
 
-                <!-- E-Bikes City/Trekking -->
-                <div class="category-card">
-                    <div class="category-image-placeholder">City E-Bike</div>
-                    <div class="category-content">
-                        <h3>City & Trekking E-Bikes</h3>
-                        <p>Komfortabel für Alltag und Touren</p>
-                        <ul class="category-features">
-                            <li>City E-Bikes</li>
-                            <li>Trekking E-Bikes</li>
-                            <li>Comfort-Geometrie</li>
-                            <li>Reichweite bis 150km</li>
-                        </ul>
-                        <div class="brands-text"><strong>Marken:</strong> Kalkhoff, Riese & Müller, Cube, Haibike</div>
-                    </div>
-                </div>
-
-                <!-- Kinderbikes -->
-                <div class="category-card">
-                    <div class="category-image-placeholder">Kinderbike</div>
-                    <div class="category-content">
-                        <h3>Kinder & Jugend</h3>
-                        <p>Hochwertige Bikes für die Kleinen</p>
-                        <ul class="category-features">
-                            <li>Kinderräder 16" - 24"</li>
-                            <li>Jugend-Mountainbikes 26" - 27.5"</li>
-                            <li>Leichte Konstruktion</li>
-                            <li>Qualitätskomponenten</li>
-                        </ul>
-                        <div class="brands-text"><strong>Marken:</strong> Cube, Scott, Specialized, Ghost</div>
-                    </div>
+            <!-- Gravelbikes -->
+            <div class="fade-in" style="margin-bottom: 12rem;">
+                <h3 style="font-size: 1.75rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 3rem; text-align: center;">Gravelbikes</h3>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1rem; line-height: 2; color: var(--color-text-light); margin-bottom: 2.5rem;">
+                        Vielseitig für Straße und Schotter
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">All-Road Bikes</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">Adventure-Modelle</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(139, 157, 147, 0.15); color: var(--color-text-light); font-size: 0.9375rem;">Bikepacking-tauglich</li>
+                        <li style="padding: 0.75rem 0; color: var(--color-text-light); font-size: 0.9375rem;">Disc-Bremsen Standard</li>
+                    </ul>
+                    <p style="font-size: 0.875rem; color: var(--color-text-anthracite); letter-spacing: 0.05em;">Specialized · Trek · Canyon · Giant · Cannondale</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="section">
+    <!-- Services Section - Offenes Layout -->
+    <section class="section-spacing">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Unsere Services beim Bike-Kauf</h2>
-            <div class="benefits-showcase">
-                <div class="benefit-box">
-                    <h3>Persönliche Beratung</h3>
-                    <p>Unsere Bike-Experten nehmen sich Zeit für dich und finden gemeinsam mit dir das perfekte Bike für deine Bedürfnisse.</p>
+            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-md);">
+                <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 1.5rem;">Unsere Services</h2>
+            </div>
+
+            <div class="fade-in" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 6rem;">
+                <div style="text-align: center;">
+                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 1.5rem;">Persönliche Beratung</h3>
+                    <p style="color: var(--color-text-light); line-height: 2; font-size: 0.9375rem;">
+                        Unsere Bike-Experten nehmen sich Zeit für dich und finden gemeinsam mit dir das perfekte Bike.
+                    </p>
                 </div>
-                <div class="benefit-box">
-                    <h3>Testfahrten</h3>
-                    <p>Teste dein Wunsch-Bike ausgiebig auf echten Trails und Straßen. Nur so findest du heraus, ob es zu dir passt.</p>
+                <div style="text-align: center;">
+                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 1.5rem;">Testfahrten</h3>
+                    <p style="color: var(--color-text-light); line-height: 2; font-size: 0.9375rem;">
+                        Teste dein Wunsch-Bike ausgiebig auf echten Trails und Straßen.
+                    </p>
                 </div>
-                <div class="benefit-box">
-                    <h3>Basis-Setup</h3>
-                    <p>Jedes Bike wird vor der Übergabe professionell aufgebaut, eingestellt und auf Sicherheit geprüft.</p>
-                </div>
-                <div class="benefit-box">
-                    <h3>Größenberatung</h3>
-                    <p>Wir ermitteln die optimale Rahmengröße für deine Körpermaße und deinen Fahrstil.</p>
-                </div>
-                <div class="benefit-box">
-                    <h3>Faire Konditionen</h3>
-                    <p>Transparente Preisgestaltung und beste Konditionen. Frag uns nach aktuellen Angeboten!</p>
-                </div>
-                <div class="benefit-box">
-                    <h3>After-Sales Support</h3>
-                    <p>Auch nach dem Kauf sind wir für dich da – mit Service, Wartung und kompetenter Beratung.</p>
+                <div style="text-align: center;">
+                    <h3 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.15em; margin-bottom: 1.5rem;">Professionelles Setup</h3>
+                    <p style="color: var(--color-text-light); line-height: 2; font-size: 0.9375rem;">
+                        Jedes Bike wird vor der Übergabe professionell aufgebaut und auf Sicherheit geprüft.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Financing Section -->
-    <section class="section" style="background-color: var(--color-primary);">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Finanzierung & Leasing</h2>
-            <div class="content-box">
-                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">Dein Traumbike muss nicht teuer sein! Wir bieten dir verschiedene Finanzierungsoptionen:</p>
-
-                <div class="financing-grid">
-                    <div class="financing-card">
-                        <div class="financing-icon-placeholder"></div>
-                        <h3>Ratenkauf</h3>
-                        <p>Finanzierung über 6, 12 oder 24 Monate möglich. Bereits ab 0% effektiver Jahreszins bei ausgewählten Modellen.</p>
-                    </div>
-                    <div class="financing-card">
-                        <div class="financing-icon-placeholder"></div>
-                        <h3>Bike-Leasing</h3>
-                        <p>JobRad & BusinessBike Partner. Spare bis zu 40% durch Gehaltsumwandlung. Ideal für Arbeitnehmer und Selbstständige.</p>
-                    </div>
-                    <div class="financing-card">
-                        <div class="financing-icon-placeholder"></div>
-                        <h3>Inzahlungnahme</h3>
-                        <p>Wir nehmen dein altes Bike in Zahlung. Faire Bewertung und Anrechnung auf deinen Neukauf.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Buy From Us Section -->
-    <section class="section">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Warum bei Bikepoint kaufen?</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-text">
-                        <h3>Expertise</h3>
-                        <p>Über 9 Jahre Erfahrung im Bike-Business. Wir wissen, worauf es ankommt.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-text">
-                        <h3>Premium-Marken</h3>
-                        <p>Nur hochwertige Bikes von renommierten Herstellern mit bester Qualität.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-text">
-                        <h3>Lokaler Service</h3>
-                        <p>Werkstatt vor Ort für Wartung, Reparatur und Ersatzteile.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-text">
-                        <h3>Garantie & Support</h3>
-                        <p>Volle Herstellergarantie plus unser persönlicher Service.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-text">
-                        <h3>Test-Möglichkeiten</h3>
-                        <p>Umfangreiches Angebot an Testbikes direkt in den Bergen.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-text">
-                        <h3>Faire Beratung</h3>
-                        <p>Keine aufdringlichen Verkäufer – nur ehrliche, kompetente Beratung.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Used Bikes Section -->
-    <section class="section" style="background-color: var(--color-primary);">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Gebrauchte Bikes</h2>
-            <div class="used-bikes-highlight">
-                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">Hochwertige, gewartete Gebrauchtbikes zu fairen Konditionen</p>
-                <div class="benefits-showcase">
-                    <div class="benefit-box">
-                        <h3>Sorgfältig geprüft</h3>
-                        <p>Jedes Gebrauchtbike wird von unseren Mechanikern gründlich inspiziert und überholt.</p>
-                    </div>
-                    <div class="benefit-box">
-                        <h3>Technisch einwandfrei</h3>
-                        <p>Alle wichtigen Verschleißteile werden erneuert oder sind in sehr gutem Zustand.</p>
-                    </div>
-                    <div class="benefit-box">
-                        <h3>Top Preis-Leistung</h3>
-                        <p>Premium-Bikes in bestem Zustand zu attraktiven Konditionen.</p>
-                    </div>
-                    <div class="benefit-box">
-                        <h3>Mit Gewährleistung</h3>
-                        <p>12 Monate Gewährleistung auf alle gebrauchten Bikes.</p>
-                    </div>
-                </div>
-                <p style="text-align: center; margin-top: 2rem; font-size: 1.05rem;">Frag uns nach unserem aktuellen Angebot an Gebrauchtbikes!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bike Components Section -->
-    <section class="section">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Komponenten & Zubehör</h2>
-            <p style="text-align: center; margin-bottom: 3rem; color: var(--color-text-light);">Zusätzlich zu kompletten Bikes bieten wir auch hochwertige Komponenten und Zubehör:</p>
-            <div class="components-grid">
-                <div class="component-card">
-                    <div class="component-icon-placeholder"></div>
-                    <h3>Laufräder</h3>
-                    <p>Premium-Laufradsätze von DT Swiss, Mavic, Newmen</p>
-                </div>
-                <div class="component-card">
-                    <div class="component-icon-placeholder"></div>
-                    <h3>Federgabeln</h3>
-                    <p>RockShox, Fox, Öhlins, Marzocchi</p>
-                </div>
-                <div class="component-card">
-                    <div class="component-icon-placeholder"></div>
-                    <h3>Dämpfer</h3>
-                    <p>Fox Float, RockShox Super Deluxe</p>
-                </div>
-                <div class="component-card">
-                    <div class="component-icon-placeholder"></div>
-                    <h3>Bremsen</h3>
-                    <p>Shimano, SRAM, Magura</p>
-                </div>
-                <div class="component-card">
-                    <div class="component-icon-placeholder"></div>
-                    <h3>Schaltungen</h3>
-                    <p>Shimano (XT, XTR), SRAM (GX, X01, XX1)</p>
-                </div>
-                <div class="component-card">
-                    <div class="component-icon-placeholder"></div>
-                    <h3>Cockpit</h3>
-                    <p>Lenker, Vorbauten, Griffe von Renthal, Race Face, Ergon</p>
-                </div>
-                <div class="component-card">
-                    <div class="component-icon-placeholder"></div>
-                    <h3>Sättel</h3>
-                    <p>SQlab, Ergon, Fizik, WTB</p>
-                </div>
-                <div class="component-card">
-                    <div class="component-icon-placeholder"></div>
-                    <h3>Pedale</h3>
-                    <p>Shimano, Crankbrothers, Race Face, HT</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Bereit für dein neues Bike?</h2>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Besuche uns im Shop oder vereinbare einen Beratungstermin!</p>
+    <!-- CTA Section - Dunkler Hintergrund -->
+    <section style="padding: var(--spacing-md) 0; background-color: #0A0A0A; text-align: center;">
+        <div class="container fade-in">
+            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 100; letter-spacing: 0.2em; margin-bottom: 2rem; color: white;">
+                Bereit für dein neues Bike?
+            </h2>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 3rem; letter-spacing: 0.1em;">
+                Besuche uns im Shop oder vereinbare einen Beratungstermin
+            </p>
             <a href="about.php" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
         </div>
     </section>
 </main>
-
-<!-- Page-specific JavaScript -->
-<script src="assets/js/verkauf.js"></script>
 
 <?php include 'includes/footer.php'; ?>
