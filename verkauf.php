@@ -71,56 +71,458 @@ include 'includes/header.php';
                 </div>
 
                 <!-- Bike Grid - Mountainbikes -->
-                <div class="bike-category-grid" data-category="mtb" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem; margin-bottom: 4rem; opacity: 1; transform: translateY(0); transition: all 0.4s ease;">
-                    <!-- Bike Card 1 -->
-                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 12px; overflow: hidden; position: relative;">
-                        <div class="bike-image-zoom" style="height: 280px; background: linear-gradient(135deg, #E5E5E5 0%, #D0D0D0 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                <div class="bike-category-grid" data-category="mtb" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; opacity: 1; transform: translateY(0); transition: all 0.4s ease;">
+
+                    <!-- Cube Stereo 140 -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
                             <div class="bike-hover-overlay"></div>
                             <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">CUBE</div>
                         </div>
-                        <div style="padding: 2rem;">
-                            <h4 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Trail Expert 29"</h4>
-                            <p style="font-size: 0.875rem; color: var(--color-text-light); line-height: 1.8; margin-bottom: 1.5rem;">
-                                Perfekt für Trail & All-Mountain. 140mm Federweg, moderne Geometrie.
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Cube Stereo 140 HPC</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Vielseitiges Trail-Fully mit 140mm Federweg. Perfekt für anspruchsvolle Touren und flowige Trails. Carbon-Rahmen mit optimiertem Gewicht und ausgewogener Geometrie für maximalen Fahrspaß.
                             </p>
-                            <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
-                                <li style="font-size: 0.8125rem; color: var(--color-text-anthracite); margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
                                     <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano XT 12-fach
                                 </li>
-                                <li style="font-size: 0.8125rem; color: var(--color-text-anthracite); margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Carbon Rahmen
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Fox 36 Performance Elite
                                 </li>
-                                <li style="font-size: 0.8125rem; color: var(--color-text-anthracite); padding-left: 1.5rem; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Fox Federung
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Carbon Rahmen, 29 Zoll
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 13,2 kg
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Bike Card 2 -->
-                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 12px; overflow: hidden; position: relative;">
-                        <div class="bike-image-zoom" style="height: 280px; background: linear-gradient(135deg, #D5D5D5 0%, #C0C0C0 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                    <!-- Orbea Occam -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #C0392B 0%, #E74C3C 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
                             <div class="bike-hover-overlay"></div>
                             <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">ORBEA</div>
                         </div>
-                        <div style="padding: 2rem;">
-                            <h4 style="font-size: 1.25rem; font-weight: 200; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Enduro Pro 27.5"</h4>
-                            <p style="font-size: 0.875rem; color: var(--color-text-light); line-height: 1.8; margin-bottom: 1.5rem;">
-                                Downhill-orientiert mit 170mm Federweg. Race-ready Setup.
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Orbea Occam M30</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Leichtes und agiles Trail-Bike mit 130mm Federweg. Die moderne Geometrie kombiniert Kletterfähigkeit mit Abfahrtsperformance. Ideal für Marathon-Touren und technische Trails in den Alpen.
                             </p>
-                            <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
-                                <li style="font-size: 0.8125rem; color: var(--color-text-anthracite); margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> SRAM GX Eagle
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano SLX 12-fach
                                 </li>
-                                <li style="font-size: 0.8125rem; color: var(--color-text-anthracite); margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Vario-Sattelstütze
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> RockShox Pike Select+
                                 </li>
-                                <li style="font-size: 0.8125rem; color: var(--color-text-anthracite); padding-left: 1.5rem; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> RockShox Lyrik
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Aluminium, 29 Zoll
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 13,8 kg
                                 </li>
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Scott Spark -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #16A085 0%, #1ABC9C 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">SCOTT</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Scott Spark 950</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Race-orientiertes XC/Trail-Bike mit 120mm Federweg und TwinLoc-System für optimale Federungsabstimmung. Extrem effizient im Uphill, verspielt im Trail. Das perfekte Bike für Wettkämpfe und schnelle Runden.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano Deore XT 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> RockShox SID Select+
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Carbon, 29 Zoll
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 11,9 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cube Stereo 170 -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">CUBE</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Cube Stereo 170 Race</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Enduro-Bike für anspruchsvolle Abfahrten mit 170mm Federweg vorne und hinten. Robuste Ausstattung für Bikepark und alpine Trails. Trotz Downhill-Fokus noch gut fahrbar bergauf dank moderner Kinematik.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> SRAM GX Eagle 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> RockShox Lyrik Select+
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Aluminium, 29 Zoll
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 15,2 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Orbea Rallon -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #D35400 0%, #E67E22 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">ORBEA</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Orbea Rallon M-LTD</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                High-End Enduro-Maschine mit 160mm Federweg und Carbon-Rahmen. Entwickelt für maximale Performance in anspruchsvollem Gelände. Variabler Lenkwinkel und progressives Fahrwerk für beste Kontrolle.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> SRAM X01 Eagle 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Fox 38 Factory
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Carbon Rahmen, 29 Zoll
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 14,3 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Scott Ransom -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #2980B9 0%, #3498DB 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">SCOTT</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Scott Ransom 920</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Vielseitiges Enduro-Bike mit 170mm Federweg und innovativer Geometrie-Anpassung. TwinLoc ermöglicht sofortige Abstimmung von Federung und Geometrie. Perfekt für Enduro-Rennen und anspruchsvolle Touren.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> SRAM GX Eagle 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> RockShox Zeb Select
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Carbon Rahmen, 29 Zoll
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 14,8 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- E-MTB Category -->
+                <div class="bike-category-grid" data-category="emtb" style="display: none; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; opacity: 0; transform: translateY(20px); transition: all 0.4s ease;">
+
+                    <!-- Cube Stereo Hybrid -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">CUBE</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Cube Stereo Hybrid 140</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Kraftvolles E-MTB mit Bosch Performance CX Motor und 750Wh Akku. 140mm Federweg für vielseitigen Einsatz auf Trail und Tour. Reichweite bis 120km je nach Modus und Gelände. Harmonische Integration von Motor und Fahrwerk.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Bosch CX 85Nm, 750Wh
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano Deore XT 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> RockShox Pike Select, 29"
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 23,5 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Orbea Rise -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">ORBEA</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Orbea Rise M20</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Leichtes E-MTB mit Shimano EP8 Motor und kompaktem 360Wh Akku. 140mm Federweg und nur 19kg Gewicht für natürliches Fahrgefühl. Das Bike fährt sich wie ein normales MTB mit dezenter Unterstützung. Perfekt für sportliche Fahrer.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano EP8 60Nm, 360Wh
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano XT 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Fox 36 Performance, 29"
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 19,2 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Scott Patron eRide -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #C0392B 0%, #E74C3C 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">SCOTT</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Scott Patron eRide 910</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                E-Enduro mit 170mm Federweg und Bosch Performance CX Motor. Für anspruchsvollste Abfahrten und Bikepark-Einsätze. TwinLoc-System für optimale Federungsabstimmung. Trotz E-Antrieb agiles Handling dank ausgeklügelter Gewichtsverteilung.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Bosch CX 85Nm, 625Wh
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> SRAM GX Eagle 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> RockShox Zeb Select, 29"
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 24,1 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Road Bikes Category -->
+                <div class="bike-category-grid" data-category="road" style="display: none; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; opacity: 0; transform: translateY(20px); transition: all 0.4s ease;">
+
+                    <!-- Cube Attain -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">CUBE</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Cube Attain GTC Pro</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Vielseitiges Carbon-Rennrad für Einsteiger und ambitionierte Hobby-Fahrer. Komfortable Geometrie für lange Touren und Granfondos. Shimano 105 Schaltung bietet präzises Schalten bei allen Bedingungen.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano 105 11-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Carbon Rahmen & Gabel
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 28 Zoll Laufräder
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 8,2 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Orbea Orca -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #C0392B 0%, #E74C3C 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">ORBEA</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Orbea Orca M30 Team</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Leichtes Race-Bike mit Carbon-Rahmen und aggressiver Geometrie. Entwickelt für Wettkämpfe und schnelle Trainingsausfahrten. Shimano Ultegra Di2 für präzises elektronisches Schalten. Aerodynamisch optimiert für maximale Geschwindigkeit.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano Ultegra Di2 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Carbon Monocoque
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Vision Team 30 Disc
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 7,4 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Scott Addict RC -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #16A085 0%, #1ABC9C 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">SCOTT</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Scott Addict RC 30</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Klassisches Climbing-Bike mit ultraleichtem Carbon-Rahmen. Perfekt für Bergtouren und Alpenpässe. Die ausgewogene Geometrie sorgt für Komfort auch auf langen Anstiegen. Shimano Ultegra für zuverlässige Performance.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano Ultegra 12-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> HMF Carbon Rahmen
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Syncros Capital 1.0
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 7,6 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Gravel Bikes Category -->
+                <div class="bike-category-grid" data-category="gravel" style="display: none; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; opacity: 0; transform: translateY(20px); transition: all 0.4s ease;">
+
+                    <!-- Cube Nuroad Pro -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">CUBE</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Cube Nuroad Pro</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Vielseitiges Gravel-Bike für Asphalt und Schotter. Komfortable Geometrie für lange Abenteuer-Touren. Platz für breite Reifen bis 50mm. Ideal für Bikepacking und gemischtes Terrain. Shimano GRX speziell für Gravel optimiert.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano GRX 810 11-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Carbon Rahmen & Gabel
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 28" Laufräder, Tubeless
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 9,1 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Orbea Terra -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #D35400 0%, #E67E22 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">ORBEA</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Orbea Terra M30 Team</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Performance-Gravel-Bike mit Race-DNA. Leichter Carbon-Rahmen und agile Geometrie für sportliches Fahren. Shimano GRX Di2 für präzises elektronisches Schalten auch bei Schlamm und Dreck. Perfekt für Gravel-Rennen und schnelle Ausfahrten.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano GRX Di2 11-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> OMR Carbon Monocoque
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Vision Team 30 Disc
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 8,3 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Scott Speedster Gravel -->
+                    <div class="bike-card-verkauf" style="background: var(--color-secondary); border-radius: 8px; overflow: hidden; position: relative; border: 1px solid var(--color-border);">
+                        <div class="bike-image-zoom" style="height: 240px; background: linear-gradient(135deg, #2980B9 0%, #3498DB 100%); filter: grayscale(100%); transition: all 0.5s ease; position: relative; overflow: hidden;">
+                            <div class="bike-hover-overlay"></div>
+                            <div class="quick-view-btn">Details ansehen</div>
+                            <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); padding: 0.4rem 0.9rem; border-radius: 4px; font-size: 0.7rem; letter-spacing: 0.1em; color: white;">SCOTT</div>
+                        </div>
+                        <div style="padding: 1.75rem;">
+                            <h4 style="font-size: 1.15rem; font-weight: 200; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: var(--color-text);">Scott Speedster Gravel 20</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); line-height: 1.75; margin-bottom: 1rem;">
+                                Einsteiger-Gravel mit Aluminium-Rahmen und ausgewogenem Preis-Leistungs-Verhältnis. Stabile Ausstattung für erste Gravel-Abenteuer. Carbon-Gabel dämpft Vibrationen auf Schotterpisten. Zuverlässig und wartungsarm für sorgenfreies Fahren.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0;">
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Shimano GRX 400 10-fach
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Alu Rahmen, Carbon Gabel
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); margin-bottom: 0.45rem; padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> Syncros RP2.0 Disc
+                                </li>
+                                <li style="font-size: 0.8rem; color: var(--color-text-anthracite); padding-left: 1.4rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--color-accent);">•</span> 10,2 kg
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
